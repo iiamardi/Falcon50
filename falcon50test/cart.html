@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shporta</title>
+    <link rel="icon" href="img/logo/50white.webp">
+    <link rel="stylesheet" href="styles.css"> <!-- Shtoni stilin tuaj këtu -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/20126e87c9.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <section id="section-one">
+    
+    <div class="topbar">
+    <h1 class="topbar-content">
+        Mbështetu tek ne. Dërgesa 100% të sigurta, kudo në Kosovë.
+      </h1>
+    </div>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="img/logo/falcon50.webp" alt="" class="logo">
+        </a>
+      </div>
+      <div class="for-container">
+        <input type="text"  id="searchbar" placeholder="Kërko produkte..." oninput="searchProduct()">
+        
+    </div>
+    <ul id="product-list" style="display: none;"></ul>     
+      </div>
+      <nav>
+        <ul>
+          <li><a href="cart.html"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="blerjet.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="welcome.html"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>
+        <div class="nav-main-container">
+        <div class="navbar-main">
+          <i class="fa-solid fa-bars"></i>
+          <nav>
+            <ul>
+              <li><a href="" ><span class="active">Kategorite</span></a></li>
+              <li><a href="">Outlet</a></li>
+              <li><a href="">Qfare ka te re</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-main2">
+          <img class="appleimg" src="https://iqq6kf0xmf.gjirafa.net/images/ce80ffe8-09e5-4635-8c44-45dced59df48/ce80ffe8-09e5-4635-8c44-45dced59df48.webp?w=160" alt="">
+          <div class="i">
+          <i class="fa-regular fa-comment"></i>
+          <h1>Chat</h1>
+          </div>
+        </div>
+        </div>
+        </main>
+    <div id="cart-detail">
+        <h1>Shporta Juaj</h1>
+        <div id="cart-items"></div>
+        <div id="total-price"></div>
+      
+    </div>
+
+   <script>
+ const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+const cartItemsContainer = document.getElementById("cart-items");
+
+if (cartItems.length > 0) {
+    cartItems.forEach(item => {
+        // Shto artikullin në shportë
+        cartItemsContainer.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" alt="${item.name}">
+                <h2>${item.name}</h2>
+                <p>${item.price}</p> <!-- Shfaq çmimin ashtu siç është -->
+                <button class="remove-item" data-id="${item.id}">
+                    <i class="fa-solid fa-trash"></i> Hiq
+                </button>
+                <button class="pay-item" data-id="${item.id}">
+                    <i class="fa-solid fa-shopping-cart"></i> Paguaj
+                </button>
+            </div>
+        `;
+    });
+
+    // Shto ngjarje për butonat "Hiq"
+    const removeButtons = document.querySelectorAll('.remove-item');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const itemId = parseInt(this.getAttribute('data-id'), 10);
+            const updatedCartItems = cartItems.filter(item => item.id !== itemId);
+            localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+            window.location.reload(); // Rifresko faqen
+        });
+    });
+
+    // Shto ngjarje për butonat "Paguaj"
+    const payButtons = document.querySelectorAll('.pay-item');
+    payButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const itemId = parseInt(this.getAttribute('data-id'), 10);
+            window.location.href = `product.html?id=${itemId}`; // Ndryshoni URL-në sipas nevojës
+        });
+    });
+} else {
+    // Nëse shporta është bosh
+    cartItemsContainer.innerHTML = `<p>Shporta juaj është bosh!</p>`;
+}
+
+// Ngjarja për butonin "Paguaj" për të gjithë shportën
+const checkoutBtn = document.getElementById("checkout-btn");
+if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", function () {
+        if (cartItems.length > 0) {
+            const firstProductId = cartItems[0].id; // Merr ID-në e produktit të parë
+            window.location.href = `product.html?id=${firstProductId}`; // Ndryshoni URL-në sipas nevojës
+        } else {
+            alert("Nuk ka produkte në shportë për të paguar!");
+        }
+    });
+}
+</script>
+<script src="js/searchbar.js"></script>
+      
+      
+</body>
+</html>

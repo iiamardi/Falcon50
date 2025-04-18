@@ -1,0 +1,157 @@
+
+    <!DOCTYPE html>
+    <html lang="sq">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - Gjirafa50</title>
+        <link rel="icon" href="img/logo/50white.webp">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/20126e87c9.js" crossorigin="anonymous"></script>
+        <style>
+            /* Reset bazë */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.method-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.method-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.method-item:hover {
+    background-color: #f9f9f9;
+}
+
+.method-item input {
+    margin-right: 15px;
+}
+
+.method-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.method-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.method-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+.actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#next-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #218838;
+}
+        </style>
+    </head>
+    <body>
+        <div class="checkout-container">
+            <!-- Seksioni i metodave të pagesës -->
+            <div class="payment-methods">
+                <h2>Zgjidhni metodën e pagesës</h2>
+                <div class="method-list">
+                    <div class="method-item">
+                        <input type="radio" id="card" name="payment-method" value="card">
+                        <label for="card">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>Paguaj me para në dorë</span>
+                        </label>
+                    </div>
+                    <div class="method-item">
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span> Paguaj online (Blerje direkte ose me këste)</span>
+                        </label>
+                    </div>
+                    <div class="method-item">
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <span>Paguaj me transfer bankar</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Butoni për të vazhduar -->
+            <div class="actions">
+                <button id="next-button">Vazhdo</button>
+            </div>
+    
+            <!-- Shfaqja e rezultatit -->
+            <div id="result" class="result"></div>
+        </div>
+    
+        <script src="script.js"></script>
+        <script>document.getElementById('next-button').addEventListener('click', function () {
+            // Kontrollo nëse është zgjedhur një metodë pagese
+            const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
+            if (selectedMethod) {
+                // Gjej elementin <span> brenda label të zgjedhur
+                const spanText = selectedMethod.closest('.method-item').querySelector('span').textContent;
+                
+                // Shfaq rezultatin
+                document.getElementById('result').textContent = `Ju keni zgjedhur: ${spanText}`;
+            } else {
+                // Nëse nuk është zgjedhur asnjë metodë
+                document.getElementById('result').textContent = 'Ju lutem zgjidhni një metodë pagese!';
+            }
+        });</script>
+    </body>
+    </html>
