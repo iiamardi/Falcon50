@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falcon50</title>
+  <link rel="icon" href="../img/logo/50white.webp">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <script src="https://kit.fontawesome.com/20126e87c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="section-one">
+    
+    <div class="topbar">
+    <h1 class="topbar-content">
+        Mbështetu tek ne. Dërgesa 100% të sigurta, kudo në Kosovë.
+      </h1>
+    </div>
+    <header>
+      <div class="logo-container">
+        <a href="../index.html">
+        <img src="../img/logo/falcon50.webp" alt="" class="logo">
+        </a>
+      </div>
+      <div class="for-container">
+        <input type="text"  id="searchbar" placeholder="Kërko produkte..." oninput="searchProduct()">
+        
+    </div>
+    <ul id="product-list" style="display: none;"></ul>     
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../cart.html"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="../blerjet.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="../welcome.html" class="re"><i class="fa-solid fa-user"></i><p id="greeting"></p></a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>
+        <div class="nav-main-container">
+        <div class="navbar-main">
+          <i class="fa-solid fa-bars"></i>
+          <nav>
+            <ul>
+              <li><a href="" ><span class="active">Kategorite</span></a></li>
+              <li><a href="outlet.html">Outlet</a></li>
+              <li><a href="qfare-ka-te-re.html">Qfare ka te re</a></li
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-main2">
+          <img class="appleimg" src="https://iqq6kf0xmf.gjirafa.net/images/ce80ffe8-09e5-4635-8c44-45dced59df48/ce80ffe8-09e5-4635-8c44-45dced59df48.webp?w=160" alt="">
+          <div class="i">
+            <a href="../chatbot.html">
+          <i class="fa-regular fa-comments"></i>
+            </a>
+          <h1>Chat</h1>
+          </div>
+        </div>
+</div>
+</main>
+</section>
+<div class="sidebar-show" id="sidebar-show" style="display: none;">
+          <ul>
+            <li>Kategorite</li>
+            <hr>
+            <li><i class="fa-solid fa-desktop"></i><a href="pc.html">Kompjuter, Laptop & Monitor</a></li>
+            <li><i class="fa-solid fa-gamepad"></i><a href="celular.html">Celular, Tablet & Navigim</a></li>
+            <li><i class="fa-solid fa-mobile"></i><a href="tv.html">TV, Audio & Foto</a></li>
+            <li><i class="fa-solid fa-tv"></i><a href="gaming.html">Gaming</a></li>
+            <li><i class="fa-solid fa-headphones"></i><a href="aksesore.html">Aksesore</a></li>
+            <li><i class="fa-solid fa-microchip"></i><a href="pjese.html">Pjese per kompjuter</a></li>
+            <hr>
+            <li><i class="fa-solid fa-box-open"></i><a href="kategorite/outlet.html">Outlet</a></li>
+            <li><i class="fa-solid fa-star"></i><a href="kategorite/qfare-ka-te-re.html">Qfare ka te re</a></li>
+          </ul>
+        </div>
+<div class="bottom-navber" id="bottom-navber">
+  <div class="fq-kryesore">
+    <a href="index.html">
+    <i class="fa-solid fa-home"></i>
+    <p>Ballina</p>
+  </a>
+  </div>
+  <div class="kategorit">
+    <a href="#sidebar-show" id="toggle-sidebar">
+    <i class="fa-solid fa-bars"></i>
+    <p>Kategorite</p>
+    </a>
+  </div>
+  <div class="shporta">
+    <a href="blerjet.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <p>Shporta</p>
+    </a>
+  </div>
+  <div class="chat">
+    <a href="chatbot.html">
+    <i class="fa-solid fa-comments"></i>
+    <p>Chat</p>
+    </a>
+  </div>
+  <div class="kyqu">
+    <a href="login.html">
+    <i class="fa-solid fa-user"></i>
+    <p>Kyqu</p>
+    </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('toggle-sidebar').addEventListener('click', function(e) {
+    e.preventDefault();
+    const sidebar = document.getElementById('sidebar-show');
+    sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+  });
+  
+  
+  </script>
+<section class="productoes">
+  <div id="produktiContainer"></div>
+</section>
+          <footer>
+      
+  <div class="div-f-one">
+    <div class="footer-logo">
+      <img src="../img/logo/falcon50.webp" alt="">
+  </div>
+  <div class="content">
+    <p>Rri i lidhur me Falcon50</h3>
+    <div class="icons-f">
+      <a href="https://www.instagrem.com/falcon50" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/falcon50" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.x.com/falcon50" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <a href="../tedrejtat.html" class="a"><p>KUSHTET E PËRDORIMIT – GJIRAFA</p></a>
+    <a href="../privatesia.html" class="b"><p>Politika e Privatësisë</p></a>
+  </div>
+  </div>
+  <div class="div-f-one">
+    <div class="content">
+      <p><b>Llogaria</b></p>
+      <a href="../cart.html" class="b"><p>Lista e deshirave</p></a>
+      <a href="../blerjet.html" class="b"><p>Porosite</p></a>
+    </div>
+    </div>
+    <div class="div-f-one">
+      <div class="content">
+        <a href="" class="b"><p><b>Pyetje te shpeshta</b></p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Per Falcon50</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Pagesat</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Garancioni</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Transporti</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Porsite</p></a>
+        </div>
+        </div>
+        <div class="div-f-one">
+          <div class="content">
+            <a href="" class="b"><p><b>Kontakti</b></p></a>
+            <a href="mailto:contact@falcon 50.com"  class="b"><p>contact@falcon50.com</p></a>
+            <a  href="" class="c"><i class="fa-solid fa-phone" id="ic"></i><p> +383 38 616 161</p></a>
+            <a href="" class="c"><i class="fa-brands fa-whatsapp"id="ic"></i><br><i id="icc" class="fa-brands fa-viber"></i><p>+383 45 101 953</p></a>
+            <p>Per kerkesa te ofertave:</p>
+            <a href="mailto:b2b@falcon50.com"class="c"><p>b2b@falcon50.com</p></a>
+            <p class="cp">Magjistralja Prishtinë-Ferizaj, kilometri i 6-të (Lapnasellë), Prishtinë, Kosovë</p>
+          </div>
+       
+</footer>
+       <script src="../js/searchbar.js"></script>
+       <script>
+        const produkte = [
+        {
+"id":20,
+"name": "Procesor Intel i7-14700KF 5,6 GHz LGA 1700",
+"price": "389.50 €",
+"description": "Njihuni me Intel Core i7 Raptor Lake Refresh, një fuqi e performancës e krijuar për entuziastët dhe profesionistët. Ky procesor ofron një kombinim të jashtëzakonshëm shpejtësie dhe fuqie.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/cd673562-3a3b-4ab9-be44-65f5d91d13a0/cd673562-3a3b-4ab9-be44-65f5d91d13a0.jpeg?w=490",
+"category": ""
+},
+{
+"id": 22,
+"name": "Procesor Intel Core i5-14400F",
+"price": "203.50 €",
+"description": "Zbuloni procesorin më të fundit Intel Core i5-14400F, i cili i kalon të gjitha modelet e mëparshme me performancën dhe fuqinë e tij! Përdorni deri në 16 korsi PCie 5.0 dhe deri në 4800 MT/s memorie DDR5.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/acbb9cc7-47bf-46bb-9079-79acbd551b81/acbb9cc7-47bf-46bb-9079-79acbd551b81.jpeg?w=490",
+"category": ""
+},
+{
+"id": 25,
+"name": "Procesor AMD Ryzen 9 7900",
+"price": "389.50 €",
+"description": "Ky është një procesor i fuqishëm i serisë 7000 për prizën AM5. Ofron 12 bërthama fizike (24 threads), një frekuencë bazë prej 3.7 GHz (deri në 5.4 GHz maksimum përforcim) dhe një memorie të fshehtë prej 64 MB (L3). Procesori mbështet memorien DDR5 me një performancë deri në 5200 MT/s.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/a8001a96-942a-4dc7-84d7-edcb5b2b0e97/a8001a96-942a-4dc7-84d7-edcb5b2b0e97.jpeg?w=490",
+"category": ""
+},
+{
+"id": 26,
+"name": "NVIDIA GeForce RTX 3060 12 GB GDDR6",
+"price": "353.50 €",
+"description": "Zbuloni fuqinë e lojrave me Karta grafike Biostar GeForce RTX 3060 12GB GDDR6! E pajisur me teknologjinë më të fundit, kjo kartë grafike ofron performancë të jashtëzakonshme dhe grafikë mahnitëse për çdo lojtar. Me 12GB memorie GDDR6, ju do të përjetoni lojëra me detaje të larta.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/381209/381209.jpeg?w=490",
+"category": ""
+},
+{
+"id": 31,
+"name": "RTX 4070 SUPER ",
+"price": "823.50 €",
+"description": "Kartelë grafike Gigabyte GAMING GeForce RTX 4070 SUPER OC 12G NVIDIA, 12 GB GDDR6X",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/08bec01a-d4d6-4cd5-a98a-baad48b683f9/08bec01a-d4d6-4cd5-a98a-baad48b683f9.jpeg?w=490",
+"category": ""
+},
+{
+"id": 33,
+"name": "Procesor Intel i9-14900K",
+"price": "649.50 €",
+"description": "Baza e re është krijuar për të zënë më pak hapësirë duke ruajtur të njëjtën stabilitet. Kjo u jep lojtarëve më shumë hapësirë për të lëvizur dhe u jep atyre fleksibilitet për të bërë rregullime dhe për të luajtur rehat. Ne e kuptojmë se secili lojtar ka kombinimin e tij unik të rregullimeve të lartësisë dhe këndit të monitorit. Falë rregullimit të lartësisë, lojtarët mund të vendosen shpejt dhe me lehtësi për një mjedis më të rehatshëm të lojës. EQualizer i zi rrit dukshmërinë në skena të errëta pa ekspozuar zona të ndritshme, Vibrance Color për të rregulluar cilësimet e ngjyrave dhe tonit për të dalluar objektivat e armikut në lojë.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/9ffd5691-6e65-4e84-aecd-1f0253645fcc/9ffd5691-6e65-4e84-aecd-1f0253645fcc.jpeg?w=490",
+"category": ""
+},
+{
+"id": 37,
+"name": "Disk i Brendshem Toshiba P300, 6TB",
+"price": "189.50 €",
+"description": "Disku i brendshëm Toshiba P300 ofron kapacitet 6TB, ideal për përdorim intensiv në kompjuterë desktopë dhe sisteme për ruajtjen e të dhënave.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/6f7ccfba-f45f-4dd5-9996-9cb94126306b/6f7ccfba-f45f-4dd5-9996-9cb94126306b.webp?w=400",
+"category": "Diskë të brendshëm"
+},
+{
+        "id": 38,
+        "name": "Kartelë grafike Gigabyte GeForce RTX 4080 SUPER Windforce V2 16GB GDDR6X",
+        "price": "1,149.50 €",
+        "description": "Zbuloni fuqinë e jashtëzakonshme të lojrave dhe performancës grafike me Karta Grafike Gigabyte GeForce RTX 4080 SUPER Windforce V2. E pajisur me 16GB GDDR6X, kjo kartë ofron grafikë mahnitëse dhe shpejtësi të papërmbajtshme për çdo lojë dhe aplikacion. Teknologjia e avancuar Windforce siguron ftohje optimale, duke garantuar që ju të përjetoni performancë të lartë pa ndonjë ndërprerje. Ideal për entuziastët e lojrave dhe profesionistët e krijimtarisë, kjo kartë do të transformojë çdo përvojë vizuale në një aventurë të paharrueshme!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/df118cf6-f95f-478b-9c40-dbb4f420b40b/df118cf6-f95f-478b-9c40-dbb4f420b40b.webp?w=400",
+        "category": "Diskë të brendshëm"
+        },
+        {
+            "id": 44,
+            "name": "Pllakë amë MSI PRO Z790-S WIFI ATX",
+            "price": "179.50 €",
+            "description": "Pllakë amë MSI PRO Z790-S WIFI ATX",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/3b4cd46b-d382-4f6f-a64d-e864dc3d35d6/3b4cd46b-d382-4f6f-a64d-e864dc3d35d6.webp?w=400",
+            "category": "Tablet"
+        },
+        {
+            "id": 48,
+            "name": "Procesor AMD Ryzen 5 5600X",
+            "price": "177.50 €",
+            "description": "Fuqizoni përvojën tuaj informatike me procesorin AMD Ryzen 5 5600X 3,7 GHz me gjashtë bërthama AM4, i cili përmban gjashtë bërthama dhe 12 fije për të ndihmuar në ngarkimin e shpejtë dhe kryerjen e shumë detyrave të aplikacioneve. I projektuar për pllakat amë me fole AM4 duke përdorur arkitekturën e fuqishme Zen 3, procesori i gjeneratës së 5-të Ryzen 7nm ofron performancë të përmirësuar ndjeshëm në krahasim me paraardhësin e tij. Me një shpejtësi të orës bazë prej 3,7 GHz dhe një shpejtësi maksimale të rritjes së orës prej 4,6 GHz, përveç 32 MB të memories L3, Ryzen 5 5600X është ndërtuar për të ofruar fuqinë e nevojshme për të trajtuar pa probleme detyrat, duke filluar nga krijimi i përmbajtjes deri tek përvojat zhytëse të lojërave. Ju mund të rrisni më tej performancën duke mbingarkuar këtë procesor të shkyçur. Karakteristika të tjera përfshijnë mbështetjen për teknologjinë PCIe Gen 4 dhe RAM DDR4 3200 MHz me pllaka amë të përputhshme. Ky procesor ka një TDP 65 W (Thermal Design Power) dhe përfshin një ftohës Wraith Stealth. Përshkrimi është duke u përpunuar, ndërkohë mund të shikoni specifikat teknike, apo kontaktoni në chat, email dhe messenger për detaje të mëtutjeshme.Ju faleminderit për mirëkuptim.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/9adf0cc8-66be-45bc-8fb1-ba9db18c83d7/9adf0cc8-66be-45bc-8fb1-ba9db18c83d7.jpeg?w=190",
+            "category": "Tablet"
+        },
+        //
+        {
+            "id": 132,
+            "name": "Burim energjie Aerocool PGS VX-700PLUS 700W 80+ BOX",
+            "price": "€77.50",
+            "description": "Burim energjie Aerocool PGS VX-700PLUS 700W 80+ BOX",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/6dc47505-595a-4e11-8644-be425e36f90d/6dc47505-595a-4e11-8644-be425e36f90d.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 133,
+            "name": "Kasë Kolink Observatory HF Glass ARGB, Midi-Tower, e bardhë",
+            "price": "€59.50",
+            "description": "Kompania Kolink është e angazhuar në krijimin e kasave kompjuterike, furnizimeve me energji elektrike dhe komponentëve dhe aksesorëve të tjerë të PC. Ajo ju sjell kasën e saj të kompjuterit, që mban emrin Observatory HF Glass ARGB. Është i pajisur me ventilatorë 3x 140mm ARGB dhe 3x120mm ARGB, një panel anësor dhe të përparmë të bërë nga xhami i kalitur dhe një dizajn me dy dhoma për të ndarë pozicionet e burimit dhe disqeve nga dhoma kryesore.  ",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/13b04b02-e1f2-408f-83a8-778c0969fe7b/13b04b02-e1f2-408f-83a8-778c0969fe7b.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 134,
+            "name": "Pllakë amë Asrock A520M-HVS AMD A520",
+            "price": "€71.50 ",
+            "description": "Pllakë amë Asrock A520M-HVS AMD A520",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/64ef9c2b-c704-4b99-bb18-3e8dce553af0/64ef9c2b-c704-4b99-bb18-3e8dce553af0.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 135,
+            "name": "Ftohës Genesis Oxal 120 Black 3-pack (NGF-2043)",
+            "price": "€18.50",
+            "description": "Përmirësoni rrjedhën e ajrit brenda kasës tuaj me Genesis Oxal 120 3-Pack. Këta ftohës efikasë të njohur nga Genesis Irid 505 V2, 503 V2 dhe 505F u krijuan për strehime me një filtër të dendur, duke siguruar kështu performancë shumë më të mirë në krahasim me zgjidhjet standarde. Kulturë e mirë e punës? Mund të mbështeteni në të falë efikasitetit të lartë edhe në shpejtësi të ulëta dhe një kushinetë të përforcuar me qëndrueshmëri të lartë (deri në 50,000 orë). Dhe kjo nuk është e gjitha.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/5a79b44e-a85e-4781-b5a0-b1d09a9a5f5b/5a79b44e-a85e-4781-b5a0-b1d09a9a5f5b.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 136,
+            "name": "Pastë termike Arctic MX-4 (ACTCP00001B), 20g",
+            "price": "€16.50",
+            "description": "Pasta termike Arctic MX-4 është zgjidhja më e zgjedhur në botën e kompjuterëve. Prodhuesi është një kompani e njohur zvicerane me përvojë të gjerë në fushën e pajisjeve elektronike, kështu që duke e zgjedhur atë, ju mund të merrni një garanci për cilësinë më të lartë të komponentëve të përdorur, dhe kështu një produkt efektiv që ju lejon të transferoni shpejt nxehtësinë nga procesori në ftohës.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/e5ba1f0b-cb27-44f3-9e85-a0ea6f56369e/e5ba1f0b-cb27-44f3-9e85-a0ea6f56369e.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 137,
+            "name": "Kasë NZXT H9 Elite, e bardh",
+            "price": "€253.50",
+            "description": "Kasë NZXT H9 Elite, e bardh",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/bcd484a3-6b46-4993-95fc-80dec0bf33ce/bcd484a3-6b46-4993-95fc-80dec0bf33ce.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 138,
+            "name": "AMD Radeon RX 6600",
+            "price": "€199.50",
+            "description": "Kartelë grafike Asrock Challenger AMD Radeon RX 6600 D 8GB GDDR6",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/380761/380761.webp?w=400",
+            "category": ""
+        },{
+            "id": 139,
+            "name": "Kasë kompjuterike ASUS ROG Strix Helios",
+            "price": "€355.50",
+            "description": "Kjo kasë ka panele xhami dhe ndriçim ARGB LED. Është e përshtatshme për instalimin e pllakave amë të formatit E-ATX, ATX, mATX dhe mini-ITX. Ofron poashtu hapësirë për disqe HDD/SSD 2x3.5/2.5'' dhe 4x2.5'' si dhe 8 vende për kartela dhe 2 për instalim GPU. Ndër të tjera, ofron hapësirë edhe për 7 ftohës, 4 prej të cilëve janë të parainstaluar. Përfshin 4x USB 3.1 Gen1 type-A, 1x USB 3.1 Gen2 type-C dhe audio-konektorë.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/6d463176-6c26-456e-b846-9c38ba626574/6d463176-6c26-456e-b846-9c38ba626574.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 140,
+            "name": "Pllakë amë MSI B650M Gaming PLUS WiFi AMD B650 Socket AM5 micro ATX",
+            "price": "€ 192.50 ",
+            "description": "MSI B650M GAMING PLUS WIFI motherboard AMD B650 Socket AM5 micro ATX",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/12fbf1fc-cb88-4c9e-9dc6-8b8c46b9375e/12fbf1fc-cb88-4c9e-9dc6-8b8c46b9375e.webp?w=400",
+            "category": ""
+        },
+
+
+        {
+            "id": 141,
+            "name": "Memorie RAM Patriot VIPER Steel 16GB (2x8GB) DDR4 4400",
+            "price": "€79.50",
+            "description": "Kompania Patriot sjell një numër të moduleve të kujtesës të shënuara Viper Steel me mbështetje për platformat më të fundit me porosi i cili jep një pamje të pastër dhe elegante. Këto module janë testuar në platformat premium / high-end Intel dhe procesorët i7 / i9. Për platformat dhe përpunuesit më pak të fuqishëm, mund të mos jetë e mundur të përdorni frekuencën e plotë të kujtesës. Poashtu, platformat AMD lejojnë që cilësimet manuale të arrijnë rreth 3600 MHz, kurse prodhuesi rekomandon seritë e APEX ASUS ROG Maximus (IX, X, XI) dhe procesorët Intel Core: i7-8700K, i7-8086K dhe i9-9900K.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/1299b8fd-8454-487f-8304-1e849aecc5c3/1299b8fd-8454-487f-8304-1e849aecc5c3.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 142,
+            "name": "Burim energjie MSI MAG A650BN - 650W",
+            "price": "€97.50",
+            "description": "Ky është një furnizim cilësor me energji elektrike me fuqi maksimale konstante prej 650 W. Eshte i pajisur me ventilator te heshtur. Ka certifikim 80 Plus Bronze. Ofron lidhës: 1x 20 + 4-pin për pllakën amë, 1x 4 + 4-pin për CPU, 2x 6 + 2-pin për PCIe, 5x SATA, 2x molex dhe 1x FDD.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/0fb666e1-ab8a-4380-b1c5-ad9f9fad2052/0fb666e1-ab8a-4380-b1c5-ad9f9fad2052.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 143,
+            "name": "GeForce RTX 3060",
+            "price": "€319.50",
+            "description": "Kartelë grafike Gigabyte GeForce RTX 3060 GAMING OC 12G (rev. 2.0) NVIDIA 12 GB GDDR6",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/384565/384565.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 144,
+            "name": "Radeon RX6700",
+            "price": "€941.50",
+            "description": "Kartë grafike Sapphire Radeon RX6700 XT Pulse 12GB GDDR6 (11306-02-20G)",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/223761/223761.webp?w=400",
+            "category": ""
+        },{
+            "id": 145,
+            "name": "Procesor Intel Core i9-11900K",
+            "price": "€339.50",
+            "description": "Është një procesor Rocket Lake i gjeneratës së 11-të i krijuar për folenë LGA 1200. Ai ofron 8 bërthama fizike (16 threads). Frekuenca e tij është 3.5 GHz dhe deri në 5.3 GHz në modalitetin Turbo. Ai ofron një 16 MB SmartCache cache dhe një proces prodhimi prej 14 nm është përdorur për ta krijuar atë. Mbështet memoriet deri në DDR4 3200 MHz. Mbështet PCI-Express 4.0. Është i pajisur me grafikë të integruar Intel UHD Graphics 750. TDP e deklaruar nga prodhuesi është 125 W. Ka një shumëzues të zhbllokuar.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/543e3e9f-3232-44e3-8eb0-c495bdf1a969/543e3e9f-3232-44e3-8eb0-c495bdf1a969.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 146,
+            "name": "Ftohës PREYON Eagle Eye, 120mm, PWM ARGB 3-pack",
+            "price": "€34.50  ",
+            "description": "Secili nga tre ftohësit ofron një gamë të gjerë ngjyrash dhe efektesh ndriçimi që mund t'i personalizoni për t'iu përshtatur stilit tuaj. Përfundimi i pasqyrës shton thellësi dhe elegancë, duke tërhequr vëmendjen te çdo konfigurim kompjuteri. Nuk është vetëm një mjet ftohës, por edhe një element që do ta dallojë pajisjen tuaj nga pjesa tjetër. Krijoni një atmosferë që plotëson në mënyrë të përsosur stilin tuaj të preferuar të lojërave - nga tranzicionet delikate të ngjyrave te efektet dinamike të ndriçimit!",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/64d0e5a2-7dbd-44fd-baee-ca0d8c198253/64d0e5a2-7dbd-44fd-baee-ca0d8c198253.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 147,
+            "name": "Kasë Pure Base Be Quiet 500DX (BGW38)",
+            "price": "€152.50",
+            "description": "Kasa Pure Base 500DX White me mbulesa të përparme dhe të sipërme të rrjedhës maksimale të ajrit është zgjedhja e duhur. Filtrat e pluhurit në pjesën e përparme dhe të poshtme të kutisë mund të hiqen lehtësisht për pastrim. Pavarësisht nga dizajni kompakt i strehimit, ventilatorët në pjesën e përparme, të sipërme dhe të pasme janë modele 140 mm, gjë që siguron funksionim shumë të qetë.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/62699654-ac37-4592-a8ab-f08387d7f2f1/62699654-ac37-4592-a8ab-f08387d7f2f1.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 148,
+            "name": "Procesor AMD Ryzen 9 9950X",
+            "price": "€849.50",
+            "description": "Procesor AMD Ryzen 9 9950X",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/7009d7af-0a38-4dfd-b806-ba1b4208addb/7009d7af-0a38-4dfd-b806-ba1b4208addb.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 149,
+            "name": "Kasë Asus ROG Hyperion GR701, Midi Tower, e bardhë",
+            "price": "€459.50",
+            "description": "Asus ROG Hyperion GR701 është një kasë premium e dizajnuar për ndërtimin e kompjuterëve të fuqishëm. E përputhshme me një gamë të gjerë të pllakave amë, përfshirë EATX, ATX dhe Mini-ITX, ajo ofron fleksibilitet maksimal për komponentë të avancuar. Me hapësirë për ftohës CPU deri në 190 mm dhe karta grafike deri në 460 mm, kjo kasë përmbush kërkesat e përdoruesve profesionistë dhe entuziastëve të lojërave.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/0d0a2a0a-f4eb-4d83-8b4b-33cca3826812/0d0a2a0a-f4eb-4d83-8b4b-33cca3826812.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 150,
+            "name": "Pllakë amë ASUS TUF GAMING Z790-BTF WIFI",
+            "price": "€459.50",
+            "description": "Pllakë amë ASUS TUF GAMING Z790-BTF WIFI",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/c8b96f1f-e5f6-4e1b-8fe3-d6f115ac8bf1/c8b96f1f-e5f6-4e1b-8fe3-d6f115ac8bf1.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 151,
+            "name": "Kasë Hyte Y70, e zezë/ kuqe",
+            "price": "€359.50",
+            "description": "Kasë Hyte Y70, e zezë/ kuqe",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/8b8a982a-794b-46e2-9b79-2eb50edc2cac/8b8a982a-794b-46e2-9b79-2eb50edc2cac.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 152,
+            "name": "Ftohës për procesor DEEPCOOL AK620, i bardhë",
+            "price": "€84.50",
+            "description": "Ftohës për procesor DEEPCOOL AK620, i bardhë",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/c3ee25f9-c79e-4060-9c5f-9d17e0c9ba6d/c3ee25f9-c79e-4060-9c5f-9d17e0c9ba6d.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 153,
+            "name": "Procesor AMD Ryzen 7 7800X3D, 4.2 GHz",
+            "price": "€649.50 ",
+            "description": "Procesori AMD Ryzen 7 7800X3D është përgjigja e AMD ndaj kërkesave në rritje të lojërave më të fundit kompjuterike. Falë përdorimit të teknologjisë së pronarit 3D V-Cache të AMD, ajo ofron fuqi edhe më të lartë kompjuterike dhe efikasitet edhe më të lartë për të rritur mundësinë e reagimit të menjëhershëm ndaj ngjarjeve në lojën tuaj të preferuar. Një nga parametrat më të rëndësishëm të një procesori është madhësia e cache. Mund të ketë një ndikim vendimtar se sa shpejt procesori kryen llogaritjet. Në rastin e AMD Ryzen 7 7800X3D, u përdor teknologjia AMD 3D V-Cache, e cila lejon një rritje të konsiderueshme në madhësinë e memories së nivelit të tretë (L3). Kjo është një nga arsyet pse AMD Ryzen 7 7800X3D është një nga zgjedhjet më të mira midis procesorëve të dedikuar për lojtarët.",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/0006cdd6-01fd-45a1-bf6c-3dc04ea0db9c/0006cdd6-01fd-45a1-bf6c-3dc04ea0db9c.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 154,
+            "name": "Kasë Deepcool CH510 WH / E-ATX, e bardhë",
+            "price": "€89.50",
+            "description": "Zbuloni stilin dhe funksionalitetin e përsosur me kasën Deepcool CH510 WH. E dizajnuar për ata që kërkojnë elegancë dhe performancë, kjo kasë e bardhë E-ATX ofron hapësirë të bollshme për komponentët tuaj të avancuar. Me ventilim të shkëlqyer dhe mundësi të shumta për menaxhimin e kabllove, ajo garanton një sistem të pastër dhe të organizuar. Shijoni ndriçimin RGB dhe dizajnin modern që do t'i japë një pamje të veçantë çdo hapësire. Zgjidhni Deepcool CH510 WH për një përvojë kompjuterike që kombinon estetikën me efikasitetin!",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/4f1718af-5eb1-4ce6-977d-9ee15528da09/4f1718af-5eb1-4ce6-977d-9ee15528da09.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 155,
+            "name": " GeForce RTX 4090",
+            "price": "€2,726.50 ",
+            "description": "Kartelë grafike Asus ROG Strix GeForce RTX 4090 BTF OC 24GB GDDR6X",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/a42ec2d6-fc58-4c5e-9514-225e128aeb90/a42ec2d6-fc58-4c5e-9514-225e128aeb90.webp?w=400",
+            "category": ""
+        },
+        {
+            "id": 156,
+            "name": "Procesor AMD Ryzen Threadripper Pro 5995WX, 2.7 GHz, 256 MB, OEM",
+            "price": "€7,044.50",
+            "description": "Procesor AMD Ryzen Threadripper Pro 5995WX, 2.7 GHz, 256 MB, OEM",
+            "image": "https://iqq6kf0xmf.gjirafa.net/images/1cbd1b20-2dd9-4257-8da7-57086be4b5a9/1cbd1b20-2dd9-4257-8da7-57086be4b5a9.webp?w=400",
+            "category": ""
+        },
+        ]
+        const produktiContainer = document.getElementById("produktiContainer");
+
+ 
+function shfaqProdukte() {
+produktiContainer.innerHTML = "";  
+
+produkte.forEach(produkti => {
+const produktiDiv = document.createElement("div");
+produktiDiv.className = "produkti";
+produktiDiv.innerHTML = `
+    <img src="${produkti.image}" class="im" alt="${produkti.name}">
+      
+    <div class="d">
+    <h2>${produkti.name}</h2>
+    <p><strong></strong> ${produkti.price}</p>
+    
+    </div>
+`;
+
+// Shtoni ngjarjen e klikimit
+produktiDiv.addEventListener("click", () => {
+    // Krijoni URL-në për product.html dhe shtoni ID-në e produktit
+    const productUrl = `../product.html?id=${produkti.id}`;
+    // Rrjedhni në faqen e detajeve të produktit
+    window.location.href = productUrl;
+});
+
+produktiContainer.appendChild(produktiDiv);
+});
+}
+
+// Thirr funksionin për të shfaqur produktet
+shfaqProdukte();
+       </script>
+       <script src="js/produktet.js"></script>
+</body>
+</html>

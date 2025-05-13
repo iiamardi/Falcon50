@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shporta</title>
+    <link rel="icon" href="img/logo/50white.webp">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/20126e87c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="section-one">
+    
+    <div class="topbar">
+    <h1 class="topbar-content">
+        Mbeshtetu tek ne. Dergesa 100% te sigurta, kudo ne Kosove.
+      </h1>
+    </div>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="img/logo/falcon50.webp" alt="" class="logo">
+        </a>
+      </div>
+      <div class="for-container">
+        <input type="text"  id="searchbar" placeholder="Kerko produkte..." oninput="searchProduct()">
+        
+    </div>
+    <ul id="product-list" style="display: none;"></ul>     
+      </div>
+      <nav>
+        <ul>
+          <li><a href="cart.html"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="blerjet.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="welcome.html"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>
+        <div class="nav-main-container">
+        <div class="navbar-main">
+          <i class="fa-solid fa-bars"></i>
+          <nav>
+            <ul>
+              <li><a href="" ><span class="active">Kategorite</span></a></li>
+              <li><a href="">Outlet</a></li>
+              <li><a href="">Qfare ka te re</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-main2">
+          <img class="appleimg" src="https://iqq6kf0xmf.falcon.net/images/ce80ffe8-09e5-4635-8c44-45dced59df48/ce80ffe8-09e5-4635-8c44-45dced59df48.webp?w=160" alt="">
+          <div class="i">
+          <i class="fa-regular fa-comments"></i>
+          <h1>Chat</h1>
+          </div>
+        </div>
+        </div>
+        </main>
+        <div class="sidebar-show" id="sidebar-show" style="display: none;">
+          <ul>
+            <li><i class="fa-solid fa-desktop"></i><a href="kategorite/pc.html">Kompjuter, Laptop & Monitor</a></li>
+            <li><i class="fa-solid fa-gamepad"></i><a href="kategorite/celular.html">Celular, Tablet & Navigim</a></li>
+            <li><i class="fa-solid fa-mobile"></i><a href="kategorite/tv.html">TV, Audio & Foto</a></li>
+            <li><i class="fa-solid fa-tv"></i><a href="kategorite/gaming.html">Gaming</a></li>
+            <li><i class="fa-solid fa-headphones"></i><a href="kategorite/aksesore.html">Aksesore</a></li>
+            <li><i class="fa-solid fa-microchip"></i><a href="kategorite/pjese.html">Pjese per kompjuter</a></li>
+          </ul>
+        </div>
+        <div class="bottom-navber" id="bottom-navber">
+          <div class="fq-kryesore">
+            <a href="index.html">
+            <i class="fa-solid fa-home"></i>
+            <p>Ballina</p>
+          </a>
+          </div>
+          <div class="kategorit">
+            <a href="#sidebar-show" id="toggle-sidebar">
+            <i class="fa-solid fa-bars"></i>
+            <p>Kategorite</p>
+            </a>
+          </div>
+          <div class="shporta">
+            <a href="blerjet.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Shporta</p>
+            </a>
+          </div>
+          <div class="chat">
+            <a href="chatbot.html">
+            <i class="fa-solid fa-comments"></i>
+            <p>Chat</p>
+            </a>
+          </div>
+          <div class="kyqu">
+            <a href="login.html">
+            <i class="fa-solid fa-user"></i>
+            <p>Kyqu</p>
+            </a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById('toggle-sidebar').addEventListener('click', function(e) {
+            e.preventDefault();
+            const sidebar = document.getElementById('sidebar-show');
+            sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+          });
+          
+          
+          </script>
+        <div class="term">
+          <p>
+            POLITIKA E PRIVATeSISe – falcon Inc.
+            Perditesimi i fundit me 24 dhjetor 2024
+            <br><br>
+            Kjo politike e privatesise per falcon Inc., (tutje referuar si “falcon”) ("ne", "neve", "jone/a", “tone/a”), pershkruan se si dhe pse mund te mbledhim, ruajme, perdorim dhe/ose ndajme ("perpunojme") informacionin tuaj kur ju (“perdoruesi”) perdorni sherbimet, produktet, faqet e internetit (“Sherbimet”) tona, si p.sh.:
+            <br><br>
+            Vizitoni faqen tone te internetit ne www.falcon.com ose çdo faqe interneti tonen qe lidhet me kete politike te privatesise
+            <br><br>
+            Komunikoni me ne ne menyra te tjera te ngjajshme, duke perfshire çdo shitje, marketing ose ngjarje
+            <br><br>
+            Pyetje apo shqetesime? Leximi i kesaj politike te privatesise do t'ju ndihmoje te kuptoni te drejtat dhe zgjedhjet tuaja te privatesise. Nese nuk jeni dakord me politikat dhe praktikat tona, ju lutemi mos perdorni Sherbimet tona. Nese keni akoma pyetje apo shqetesime, ju lutemi na kontaktoni ne contact@falcon.com.
+            <br><br>
+            RECITALET
+            <br><br>
+            Ne parim, falcon perpunon te dhenat personale te perdoruesve te saj vetem per aq sa kjo eshte e nevojshme per te ofruar nje faqe interneti funksionale, si dhe permbajtje dhe sherbime. Perpunimi i te dhenave personale te perdoruesve kryhet rregullisht vetem pas pelqimit te perdoruesit. Nje perjashtim zbatohet ne ato raste kur marrja e pelqimit paraprak nuk eshte e mundur per arsye faktike dhe perpunimi i te dhenave lejohet me rregullative ligjore.
+            <br><br>
+            Ne i marrim shume seriozisht dispozitat e mbrojtjes se te dhenave dhe i respektojme ato gjate perpunimit te te dhenave personale ne lidhje me shitjen e mallrave ose produkteve te tjera te ngjashme dhe ofrimin e sherbimeve te perzgjedhura, qofte nepermjet platformes falcon (tutje referuar si “Platforma”), e cila operohet ne faqen e internetit www.falcon.com (tutje referuar si “faqja e internetit”), nepermjet postes elektronike ose ne çdo forme tjeter. Kjo vlen edhe per perdorimin e thjeshte te faqes sone te internetit.
+            <br><br>
+            Kur perdorni Sherbimet dhe/ose vizitoni faqen tone te internetit, ju pranoni kushtet e pershkruara ne kete Politike te Privatesise. Duke vepruar keshtu, ju na autorizoni te mbledhim dhe perpunojme te dhenat tuaja, sipas praktikave te percaktuara ne kete Politike te Privatesise, si dhe ne perputhje me ligjet ne fuqi.
+            <br><br>
+            Ne kemi perditesuar kete Politike te Privatesise per te siguruar qe politikat e saj per rregullimin e proceseve dhe masave te sigurise per mbledhjen dhe perpunimin e te dhenave personale jane ne perputhje me ligjin e zbatueshem ne Republiken e Kosoves, perkatesisht Ligjin Nr. 06/L-082 per Mbrojtjen e te Dhenave Personale. Per me teper, ne do te bejme çdo perpjekje per te siguruar qe te dhenat personale te mbledhura nga perdoruesit do te trajtohen ne perputhje me ligjet e tjera ne fuqi ne Republiken e Kosoves.
+            <br><br>
+            Kjo Politike e Privatesise u adresohet klienteve potenciale dhe ekzistues te falcon, duke perfshire perfaqesuesit e tyre, bleresve te mundshem, d.m.th. personave te interesuar per mallrat e ofruara dhe sherbimet e tjera, si dhe per te gjithe vizitoret e Platformes dhe Faqes se internetit, me ç'rast fusheveprimi, qellimi dhe arsyet e perpunimit te te dhenave personale ndryshojne ne situatat konkrete perkatese dhe korrespondojne me marredheniet konkrete perkatese ndermjet personave te lartpermendur (tutje referuar si “perdorues/te”) dhe falcon. Keshtu, kjo Politike e Privatesise zbatohet dhe eshte e zbatueshme per çdo perdorues te faqes se internetit, produkteve dhe/ose sherbimeve te ofruara nga dhe/ose permes falcon. Per qellimet e kesaj Politike te Privatesise, termat "perdorues", "klient" dhe “konsumator” kane te njejtin kuptim, perveç nese tregohet ndryshe nga konteksti i perdorimit, dhe termi "Pale e trete" i referohet çdo personi fizik ose juridik, perveç perdoruesit dhe falcon.
+            <br><br>
+            Informacion i pergjithshem ne lidhje me perpunimin e te dhenave personale
+            <br><br>
+            1. Te dhenat personale dhe kuptimi i tyre
+            <br><br>
+            Te dhenat personale nenkupton çdo informacion qe lidhet me nje person fizik te identifikuar ose te identifikueshem (i referuar gjithashtu si “Subjekti i te Dhenave”); nje person fizik i identifikueshem eshte ai qe mund te identifikohet, drejtperdrejt ose terthorazi, veçanerisht duke iu referuar nje identifikuesi si emri, nje numer identifikimi, te dhenat e vendndodhjes, nje identifikues ne internet ose nje ose me shume faktore specifike fizike, fiziologjike, identitetin gjenetik, mendor, ekonomik, kulturor ose social te atij personi fizik. Ketu perfshihet veçanerisht data e lindjes ose vendi i lindjes, adresa e postes elektronike, numri i telefonit, vendbanimi, identifikuesi i rrjetit (cookies), numri i kartes se identitetit dhe numri i patentes se shoferit, kopja e ketyre ID-ve, te dhenat rreth llogarive ne rrjetet sociale, permbajtja e bisedes, ID-ja e Google, te dhenat online dhe offline dhe kombinimi i tyre, te dhena per aktivitetet ne Faqen e Internetit duke perfshire analizen e grupimeve, te dhena per mallrat e blera deri me sot dhe sherbimet e ofruara nga personi pergjegjes deri me sot, etj. Ne menyre te permbledhur, nenkupton çdo informacion qe, ne vetvete ose ne kombinim me te dhena te tjera, mund te identifikonte nje person fizik te caktuar. Subjekt i te dhenave mund te konsiderohet secili perdorues i Sherbimeve tona.
+            <br><br>
+            2. Aktiviteti i perpunimit te te dhenave personale
+            <br><br>
+            Perpunimi i te dhenave nenkupton çdo veprim ose grup veprimesh mbi te dhenat personale ose mbi grupe te dhenash personale te kryera me ndihmen e procedurave automatike ose pa procedura te tilla mbi te dhenat personale; p.sh. koleksionimi, grumbullimi, perdorimi, klasifikimi, kombinimi, rregullimi, strukturimi, rigrupimi ose lidhja, ruajtja, pershtatja ose modifikimi, kerkimi, konsultimi, shenimi, shfrytezimi, shperndarja, venia ne dispozicion me ane te transmetimit ose çdo venie ne dispozicion, kufizimi, fshirja ose shkaterrimi i te dhenave personale.
+            <br><br>
+            3. Qellimi, baza ligjore dhe fusheveprimi i perpunimit te te dhenave personale
+            <br><br>
+            Ne perputhje me Ligjin Nr. 06/L-082 per Mbrojtjen e te Dhenave Personale, kontrolluesi i te dhenave (falcon) mund te perpunoje te dhenat personale vetem per arsye specifike ligjore, perkatesisht ne baze kontraktuale dhe ne baze ligjore (perfshire ne baze te nje detyrimi ligjor). Ne kete drejtim, perpunimi i te dhenave ne rastin konkret duhet te jete ne interesin publik, te sherbeje per mbrojtjen e interesave te subjektit te te dhenave ose te nje personi tjeter fizik, te jete i nevojshem per shkak te interesave legjitime te kontrolluesit ose te nje pale te trete, ose te kryhet me pelqimin e shprehur te subjektit te te dhenave. Fusheveprimi i te dhenave qe do te perpunohen varet nga qellimi ose baza ligjore e perpunimit perkates.
+            <br><br>
+            4. Zbulimi i te dhenave personale te palet e treta
+            <br><br>
+            Ne disa raste, kontrolluesi i te dhenave perdor sherbimet e paleve te treta ne lidhje me aktivitetet e tij te biznesit. Nder te tjera, keta perpunojne edhe te dhenat personale te mbledhura nga kontrolluesi. Keto pale te treta do te konsiderohen me pas si perpunues te porositur te te dhenave. Ketu bejne pjese per shembull, sistemet e IT-se dhe administratoret e faqeve te internetit, kontabilistet, keshilltaret tatimore, avokatet, auditoret, agjencite e marketingut, etj. Ne kuader te permbushjes se detyrimeve te tij ligjore, kontrolluesi i te dhenave duhet t'u transmetoje gjithashtu te dhena personale autoriteteve publike (p.sh. gjykatat, agjencite e zbatimit te ligjit, autoritetet administrative, etj.) ne nje mase te domosdoshme.
+            <br><br>
+            PeRMBLEDHJE E PIKAVE KYÇE
+            <br><br>
+            Kjo permbledhje ofron pika kyçe nga politika jone e privatesise, por ju mund te mesoni me shume detaje rreth seciles prej ketyre temave duke perdorur tabelen tone te permbajtjes me poshte per te gjetur seksionin qe kerkoni.
+            <br><br>
+            Çfare informacioni personal perpunojme?
+            <br><br>
+            Kur ju vizitoni, perdorni ose navigoni Sherbimet tona, ne mund te perpunojme informacione personale ne varesi te menyres se si nderveproni me ne dhe Sherbimet, zgjedhjet qe beni dhe produktet dhe veçorite qe perdorni. Mesoni me shume rreth informacionit personal qe na jepni, me poshte.
+            <br><br>
+            A perpunojme ne ndonje informacion te ndjeshem personal?
+            <br><br>
+            Ne nuk perpunojme informacione te ndjeshme personale, perveç rasteve kur konsiderohet e nevojshme dhe ne kemi paraprakisht pelqimin tuaj me shkrim.
+            <br><br>
+            A pranojme ne ndonje informacion nga palet e treta?
+            <br><br>
+            Ne mund te pranojme informacione nga bazat e te dhenave publike, partneret e marketingut, platformat e mediave sociale dhe burime te tjera te jashtme. Mesoni me shume rreth informacionit te mbledhur nga burime te tjera, me poshte.
+            <br><br>
+            Si e perpunojme ne informacionin tuaj?
+            <br><br>
+            Ne perpunojme informacionin tuaj per te ofruar, permiresuar dhe administruar Sherbimet tona, per te komunikuar me ju, per sigurine dhe parandalimin e mashtrimit dhe per te respektuar ligjin. Ne gjithashtu mund te perpunojme informacionin tuaj per qellime te tjera me pelqimin tuaj. Ne perpunojme informacionin tuaj vetem kur kemi nje arsye ligjore te vlefshme per ta bere kete. Mesoni me shume rreth menyres se si e perpunojme informacionin tuaj, me poshte.
+            <br><br>
+            Ne çfare situatash dhe me cilat pale mund te ndajme ne informacionin personal?
+            <br><br>
+            Ne mund te ndajme informacion ne situata specifike dhe me pale te treta specifike. Mesoni me shume se kur dhe me ke ndajme informacionin tuaj personal, me poshte.
+            <br><br>
+            Si e mbajme informacionin tuaj te sigurt?
+            <br><br>
+            Ne mbrojme te dhenat tuaja duke perdorur masa te larta sigurie teknologjike, fizike dhe administrative per te minimizuar rrezikun e çdo humbjeje, keqperdorimi, qasjeje te paautorizuar, zbulimi ose ndryshimi te te dhenave. Disa nga masat mbrojtese qe ne perdorim jane "firewalls", enkriptimi i te dhenave, nivelet e larta te kontrollit dhe kriteret e autorizimit per qasjen ne te dhenat tuaja personale. Mesoni me shume rreth menyres se si ne i ruajme informacionet tuaja, me poshte.
+            <br><br>
+            Cilat jane te drejtat tuaja?
+            <br><br>
+            Ligji ne fuqi per privatesine ne Kosove, perkatesisht Ligji Nr. 06/L-082 per Mbrojtjen e te Dhenave Personale, konstaton se ju keni disa te drejta ne lidhje me te dhenat tuaja personale. falcon ka perditesuar kete Politike te Privatesise per te siguruar qe politikat e saj per rregullimin e proceseve dhe masat e sigurise per mbledhjen dhe perpunimin e te dhenave personale jane ne perputhje me ligjin. Per me teper, falcon do te beje te gjitha perpjekjet per te siguruar qe te dhenat personale te mbledhura nga perdoruesit te trajtohen ne perputhje me ligjet ne fuqi ne Republiken e Kosoves.
+            <br><br>
+            falcon gjithashtu synon vullnetarisht dhe vazhdimisht te perputhe dhe te harmonizoje praktikat e saj me standardet me te larta nderkombetare ne lidhje me mbrojtjen e privatesise dhe te dhenave personale, siç eshte Rregullorja e Pergjithshme e Mbrojtjes se te Dhenave, (GDPR) e Bashkimit Evropian, e cila ka hyre ne fuqi me 25 maj 2018. Kjo Politike e Privatesise zbatohet dhe zbatohet per çdo perdorues te cilesdo prej faqeve te internetit, produkteve dhe/ose sherbimeve te ofruara nga dhe/ose nepermjet falcon. Mesoni me shume rreth te drejtave tuaja te privatesise, me poshte.
+            <br><br>
+            Si t’i ushtroni te drejtat tuaja?
+            <br><br>
+            Menyra me e lehte per te ushtruar te drejtat tuaja eshte duke vizituar ose duke na kontaktuar. Ne do te shqyrtojme dhe do te veprojme sipas çdo kerkese ne perputhje me ligjet ne fuqi per mbrojtjen e te dhenave.
+            <br><br>
+            Deshironi te mesoni me shume rreth asaj qe bejme me çdo informacion qe mbledhim? Lexoni ne teresi Politiken e Privatesise.
+            <br><br>
+            1. ÇFARe INFORMACIONI MBLEDHIM?
+            Informacion personal qe ju na jepni
+            <br><br>
+            Shkurtimisht: Ne mbledhim informacione personale qe ju na jepni.
+            <br><br>
+            Ne mbledhim informacione personale qe ju na jepni vullnetarisht kur regjistroheni ne Platforme dhe/ose Sherbime, kur ju perditesoni ose plotesoni te dhenat personale ne llogarine tuaj, shprehni interesin per te marre informacion rreth nesh ose produkteve dhe sherbimeve tona, kur merrni pjese ne aktivitete ne Sherbimet, kur porositni, dhe/ose blini, nga dhe/ose nepermjet Sherbimeve tona, kur hasni rrethana te tjera, siç mund te specifikohen ne kete Politike te Privatesise ose ndryshe kur na kontaktoni.
+            <br><br>
+            Informacioni personal i dhene nga ju
+            <br><br>
+            Informacioni personal qe mbledhim varet nga konteksti i nderveprimeve tuaja me ne dhe Sherbimet, zgjedhjet qe beni dhe produktet dhe veçorite qe perdorni. Informacioni personal qe mbledhim mund te perfshije sa vijon, por nuk kufizohet ne:
+            <br><br>
+            Emri dhe mbiemri<br><br>
+            Numrat e telefonit<br><br>
+            Adresat e emailit<br><br>
+            Adresat e banimit<br><br>
+            Te dhenat e kontaktit ose te vertetimit<br><br>
+            Adresat e faturimit<br><br>
+            Data e lindjes<br><br>
+            Fjalekalimi<br><br>
+            Informacione te tjera relevante ne perputhje me qellimin dhe/ose bazen ligjore.
+            Lloje te tjera te informacionit personal qe ne mund te mbledhim, perfshijne, por nuk kufizohen ne:
+            <br><br>
+            Kur blini produkte dhe/ose sherbime te ndryshme nga ne, atehere mund t'ju kerkohet informacion si adresa e dorezimit per produktin e blere, adresa e faturimit, te dhenat e kartes dhe/ose te llogarise bankare, te dhenat ne lidhje me mjetet e ndryshme te pageses, dhe informacione te tjera te ofruara nga ju per blerjen e çdo produkti dhe/ose Sherbimi, dhe me qellim te ofrimit te produktit te porositur dhe perfundimit me sukses te pageses.
+            Kur perdorni Sherbimet tona, duke perfshire kur vizitoni ndonje nga faqet tona te internetit, ju mund te jepni informacione personale si mosha, gjinia, interesat, arsimi, pervoja profesionale, preferencat, etj.
+            Ne gjithashtu mund te mbledhim dhe perpunojme informacione te tjera shtese qe kerkohen ose autorizohen nga ligjet ne fuqi per mbledhjen dhe perpunimin e te dhenave, ne menyre qe te identifikojme dhe verifikojme informacionin e ofruar per ju, veçanerisht kur veprime te tilla kerkohen dhe/ose urdherohen nga çdo autoritet publik kompetent.
+            Ne asnje rast dhe ne asnje rrethane, ne nuk do t'ju kerkojme te zbuloni dhe/ose te jepni te dhenat personale te femijeve. Ju mund te vendosni emrin e nje te mituri nen kujdesin tuaj ne llogarine e regjistruar ne falcon vetem per qellimin e identifikimit te perdoruesit, dhe per qellimin e zgjedhjes se permbajtjes qe eshte e pershtatshme per moshen e tyre.
+            <br><br>
+            Informacion i Ndjeshem
+            <br><br>
+            Ne nuk perpunojme informacione te ndjeshme, perveç rasteve kur konsiderohet e nevojshme dhe ne kemi paraprakisht pelqimin tuaj me shkrim.
+            <br><br>
+            Te Dhenat e Pageses
+            <br><br>
+            Ne nuk mbledhim, ruajme ose perpunojme karten bankare nese beni blerje. Ne rastet kur perpunimi i pageses kryhet nga pale te treta, ne mund t'i ndajme te dhenat e pagesave te ofruara nga Ju me palet e treta qe ofrojne sherbimet perkatese te perpunimit te pagesave. Te gjitha te dhenat e pageses ruhen nga pala e trete perkatese. Ne raste te tilla, jane te zbatueshme kushtet dhe politikat per perpunimin e te dhenave personale te paleve te treta perkatese. Ju keshillojme te lexoni politiken e privatesise te paleve te treta perkatese.
+            <br><br>
+            Te dhenat e hyrjes/identifikimit ne media sociale
+            <br><br>
+            Ne mund t'ju ofrojme mundesine per t'u regjistruar me ne duke perdorur detajet ekzistuese te llogarise suaj te mediave sociale, si Facebook, Google ose llogari tjera te mediave sociale. Nese zgjidhni te regjistroheni ne kete menyre, ne do te mbledhim informacione te caktuara te profilit tuaj nga ofruesi i mediave sociale, siç pershkruhet ne seksionin e quajtur "SI I TRAJTOJMe NE HYRJET TUAJA Ne MEDIAT SOCIALE?" me poshte.
+            <br><br>
+            Te gjitha informacionet personale qe ju na jepni duhet te jene te verteta, te plota dhe te sakta, dhe ju duhet te na njoftoni per çdo ndryshim ne keto informacione personale.
+            <br><br>
+            Informacioni i mbledhur automatikisht
+            <br><br>
+            Shkurtimisht: Disa informacione — si adresa juaj e Protokollit te Internetit (IP) dhe/ose karakteristikat e shfletuesit dhe pajisjes — mblidhen automatikisht kur vizitoni Sherbimet tona
+            <br><br>
+            Ne mbledhim automatikisht informacione te caktuara kur ju vizitoni, perdorni ose navigoni Sherbimet tona. Ky informacion mund te zbuloje identitetin tuaj specifik (si emri, informacioni i kontaktit ose numri i ID-se), dhe mund te perfshije informacionin e pajisjes dhe perdorimit, si adresen tuaj IP, karakteristikat e shfletuesit dhe pajisjes, sistemin operativ, preferencat gjuhesore, URL-te referuese, emri i pajisjes, vendin, vendndodhjen, informacionin se si dhe kur i perdorni Sherbimet tona, te dhenat mbi preferencat tuaja te marketingut, reklamimit dhe komunikimit me ne, cilat te dhena marrim ne nga pajisjet qe perdorni kur perdorni Sherbimet tona, kur regjistroni nje llogari me ne, perditesoni ose shtoni informacion ne llogarine tuaj, merrni pjese ne diskutime ose biseda ne internet dhe/ose kur komunikoni me ne ne lidhje me Sherbimet tona, te dhena nga pajisjet tuaja si statistikat e shikimit te faqeve, trafiku ne dhe/ose nga faqe te internetit te caktuara, miniaplikacione, historiku i shfletimit ose te dhenat tuaja te hyrjes ne faqet tona te internetit ose ato te partnereve tane, te dhenat per termat e kerkimit dhe/ose filtrat e perdorur dhe informacione te tjera teknike. Ky informacion eshte i nevojshem kryesisht per te ruajtur sigurine dhe funksionimin e Sherbimeve tona, si dhe per qellimet tona te brendshme analitike dhe raportuese.
+            <br><br>
+            Informacioni qe ne mbledhim perfshin:
+            <br><br>
+            Regjistrin dhe te dhenat e perdorimit. Te dhenat e regjistrit dhe perdorimit jane informacione te lidhura me sherbimin, diagnostikimin, perdorimin dhe performancen qe serveret tane mbledhin automatikisht kur ju qaseni ose perdorni Sherbimet tona dhe te cilat ne i regjistrojme ne skedaret e regjistrave. Varesisht se si nderveproni me ne, keto te dhena te regjistrit mund te perfshijne adresen tuaj IP, informacionin e pajisjes, llojin e shfletuesit dhe cilesimet dhe informacionin rreth aktivitetit tuaj ne Sherbime (te tilla si vulat e dates/kohes qe lidhen me perdorimin tuaj, faqet dhe skedaret e pare , kerkimet dhe veprimet e tjera qe ndermerrni, si p.sh. cilat veçori perdorni), informacionet e ngjarjeve te pajisjes (siç jane aktiviteti i sistemit, raportet e gabimeve (ndonjehere te quajtura "depozitimet e perplasjeve"/”crash dumps”) dhe cilesimet e harduerit).
+            Te Dhenat e Pajisjes. Ne mbledhim te dhena te pajisjes, te tilla si informacione per kompjuterin, telefonin, tabletin ose pajisjen tjeter qe perdorni per te hyre ne Sherbimet. Ne varesi te pajisjes se perdorur, te dhenat e kesaj pajisjeje mund te perfshijne informacione te tilla si adresa juaj IP (ose serveri proxy), numrat e identifikimit te pajisjes dhe aplikacionit, vendndodhjen, llojin e shfletuesit, modelin e harduerit, ofruesin e sherbimit te internetit dhe/ose operatorin celular, sistemin operativ dhe informacione per konfigurimin e sistemit.
+            Te Dhenat e Vendndodhjes. Ne mbledhim te dhena per vendndodhjen, si p.sh. informacione per vendndodhjen e pajisjes suaj, te cilat mund te jene ose te sakta ose te pasakta. Sa informacion mbledhim varet nga lloji dhe cilesimet e pajisjes qe perdorni per te hyre ne Sherbimet. Per shembull, ne mund te perdorim GPS dhe teknologji te tjera per te mbledhur te dhena te vendndodhjes gjeografike qe na tregojne vendndodhjen tuaj aktuale (bazuar ne adresen tuaj IP). Ju mund te terhiqeni nga lejimi i mbledhjes se ketij informacioni ose duke refuzuar qasjen ne informacion ose duke çaktivizuar cilesimin e vendndodhjes ne pajisjen tuaj. Megjithate, nese zgjidhni te terhiqeni, mund te mos jeni ne gjendje te perdorni disa aspekte te Sherbimeve.
+            Informacioni i mbledhur nga "Cookies"
+            <br><br>
+            Ashtu si shume biznese, ne gjithashtu mbledhim informacion permes cookies dhe teknologjive te ngjashme. Kur ju vizitoni faqen tone te internetit , skedare te vegjel teksti ruhen ne shfletuesin tuaj, te ashtuquajturat cookies. Ruajtja e cookies kerkon miratimin tuaj ne te ashtuquajturen procedure "opt-in".
+            <br><br>
+            Cookies jane skedare te vegjel teksti qe permbajne nje sasi te paperfillshme informacioni (shkronja dhe numra) qe ruhen ne kompjuterin tuaj kur vizitoni Faqen e Internetit dhe lundroni neper platforme dhe qe i mundesojne Faqes se Internetit te njohe shfletuesin ose pajisjen tuaj.
+            <br><br>
+            Ne kete Politike te Privatesise, ne do t'u referohemi skedareve te tille me fjalen "cookies" sipas versionit origjinal te shkruar ne gjuhen angleze. Per sa i perket interesit tone legjitim, cookie te tilla jane thelbesore per funksionimin e Faqes se Internetit (Platformes) dhe per sherbimet e internetit te falcon.
+            <br><br>
+            Ne perdorim cookies per t'ju ofruar veçori dhe Sherbime, duke perfshire:
+            <br><br>
+            Per te ju njohur juve kur identifikoheni dhe kyçeni per te perdorur sherbimet tona;
+            Per te memorizuar preferencat tuaja te specifikuara;
+            Per te kryer diagnostifikimin mbi performancen e Sherbimeve tona dhe per te permiresuar funksionalitetin e tyre;
+            Per te permiresuar sigurine dhe parandalimin e aktiviteteve mashtruese;
+            Per te kuptuar nderveprimet e juaja me Sherbimet tona dhe per te personalizuar permbajtjen qe ju ofrohet, duke perfshire reklamat.
+            <br><br>
+            Llojet e cookies qe perdorim:
+            <br><br>
+            Cookies te nevojshme: Keto cookie jane te nevojshme per funksionimin e Sherbimeve te falcon dhe per kete arsye nuk mund te ç’aktivizohen. Cookies te tilla nuk ruajne asnje te dhene personalisht te identifikueshme.
+            <br><br>
+            Cookies te performances: Keto cookie na mundesojne te monitorojme vizitat dhe trafikun ne faqet tona te internetit dhe perdoren per te matur dhe permiresuar performancen e Sherbimeve tona. Keto cookie jane gjithashtu te nevojshme per ne per te dalluar subjektet individuale te te dhenave kur shikojme faqet e internetit dhe per te shfaqur informacione te rendesishme vetem per keto subjekte te te dhenave sipas preferencave te tyre te meparshme;
+            <br><br>
+            Cookie marketingu: Keto cookies perdoren nga rrjetet e reklamave dhe rrjetet sociale per te konfiguruar reklamat qe shihni ne menyre qe ato te paraqesin permbajtje qe eshte e rendesishme per ju.
+            <br><br>
+            Nese nuk deshironi te ruani skedaret e cookie-ve rregullisht dhe sistematikisht ne shfletuesin tuaj ose deshironi te hiqni te gjithe skedaret e cookie-ve te ruajtura nga shfletuesi, mund ta specifikoni kete ne cilesimet e shfletuesit. Megjithate, refuzimi ose bllokimi i skedareve te cookies mund te ndikoje ne perdorimin e faqes se internetit dhe ju mund te mos jeni ne gjendje te perfitoni nga disa veçori thelbesore te Sherbimeve tona.
+            <br><br>
+            Google API
+            <br><br>
+            Perdorimi yne i informacionit te marre nga Google API do t'i permbahet Politikes se te Dhenave te Perdoruesit te Sherbimeve API te Google, duke perfshire kerkesat per perdorim te kufizuar. Linkun e kesaj Politike e gjeni ketu:
+            <br><br>
+            Informacioni i mbledhur nga burime te tjera
+            <br><br>
+            Shkurtimisht: Ne mund te mbledhim te dhena te kufizuara nga bazat e te dhenave publike, partneret e marketingut, platformat e mediave sociale dhe burime te tjera te jashtme.
+            <br><br>
+            Per te rritur aftesine tone per te ofruar marketing, oferta dhe sherbime perkatese per ju dhe per te perditesuar te dhenat tona, ne mund te marrim informacione rreth jush nga burime te tjera, te tilla si bazat e te dhenave publike, partneret e perbashket te marketingut, programet e filialeve, ofruesit e te dhenave, platformat e mediave sociale dhe nga pale te tjera te treta. Ky informacion perfshin adresat postare, titujt e punes, adresat e postes elektronike, numrat e telefonit, te dhenat e qellimit (ose te dhenat e sjelljes se perdoruesit), adresat e Protokollit te Internetit (IP), profilet e mediave sociale, URL-te e mediave sociale dhe profilet e personalizuara, qellime te reklamimit te targetuar dhe promovimit te ngjarjeve.
+            <br><br>
+            Ne perdorim gjithashtu ofruesit e sherbimeve per te kryer funksione dhe per te ofruar sherbime ne zonat ku operojme. Per shembull, ne perdorim sherbime te ndryshme te paleve te treta, si psh. Google Analytics, Hotjar, etj., per te ndihmuar ne ofrimin e Sherbimeve te tij, te tilla si hostimi i servereve ose aplikacioneve tona, ose per te na ndihmuar te kuptojme perdorimin e Sherbimeve tona.
+            <br><br>
+            Nese nderveproni me ne ne nje platforme te mediave sociale duke perdorur llogarine tuaj te mediave sociale (p.sh. Facebook), ne marrim informacione personale per ju nga kjo platforme te tilla si emri, adresa e emailit dhe gjinia. Çdo informacion personal qe mbledhim nga llogaria juaj e mediave sociale varet nga cilesimet e privatesise se llogarise suaj te mediave sociale. Ju lutemi vini re se perdorimi i tyre i informacionit tuaj nuk rregullohet nga kjo politike e privatesise.
+            <br><br>
+            2. SI E PeRPUNOJMe NE INFORMACIONIN TUAJ?
+            Shkurtimisht: Ne perpunojme informacionin tuaj per te ofruar, permiresuar dhe administruar Sherbimet tona, per te komunikuar me ju, per sigurine dhe parandalimin e mashtrimit dhe per te respektuar ligjin. Ne gjithashtu mund te perpunojme informacionin tuaj per qellime te tjera me pelqimin tuaj.
+            <br><br>
+            Ne mund te perpunojme informacionin tuaj personal per disa arsye, varesisht se si nderveproni me Sherbimet tona, duke perfshire:
+            <br><br>
+            Per te lehtesuar krijimin dhe vertetimin e llogarise dhe per te menaxhuar llogarite e perdoruesve. Ne mund te perpunojme informacionin tuaj qe ju te mund te krijoni dhe te kyceni ne llogarine tuaj, si dhe ta mbani llogarine tuaj funksionale.
+            Per te ofruar dhe lehtesuar ofrimin e sherbimeve tek perdoruesi. Ne mund te perpunojme informacionin tuaj per t'ju ofruar sherbimin e kerkuar.
+            Per t'iu pergjigjur pyetjeve te perdoruesve/ofrimi i mbeshtetjes per perdoruesit. Ne mund te perpunojme informacionin tuaj per t'iu pergjigjur pyetjeve tuaja dhe per te zgjidhur çdo problem te mundshem qe mund te keni me sherbimin e kerkuar.
+            Per t'ju derguar informacione administrative. Ne mund te perpunojme informacionin tuaj per t'ju derguar detaje ne lidhje me produktet dhe sherbimet tona, ndryshimet ne kushtet dhe politikat tona dhe informacione te tjera te ngjashme.
+            Per te permbushur dhe menaxhuar porosite tuaja. Ne mund te perpunojme informacionin tuaj per te permbushur dhe menaxhuar porosite, pagesat, kthimet dhe shkembimet tuaja te bera permes Sherbimeve.
+            Per te kerkuar komente/feedback. Ne mund te perpunojme informacionin tuaj kur eshte e nevojshme per te kerkuar komente dhe per t'ju kontaktuar ne lidhje me perdorimin tuaj te Sherbimeve tona.
+            Per t'ju derguar njoftime marketingu dhe promovuese. Ne mund te perpunojme informacionin personal qe na dergoni per qellimet tona te marketingut, nese kjo eshte ne perputhje me preferencat tuaja te marketingut. Ju mund te terhiqeni nga emailet tona te marketingut ne çdo kohe. Per me shume informacion, shihni "CILAT JANe Te DREJTAT TUAJA Te PRIVATeSISe?" me poshte.
+            Per te ofruar reklama te synuara per ju. Ne mund te perpunojme informacionin tuaj per te zhvilluar dhe shfaqur permbajtje dhe reklama te personalizuara te pershtatura per interesat, vendndodhjen tuaj dhe me shume.
+            Per te mbrojtur Sherbimet tona. Ne mund te perpunojme informacionin tuaj si pjese e perpjekjeve tona per t'i mbajtur Sherbimet tona te pademshme dhe te sigurta, duke perfshire monitorimin dhe parandalimin e mashtrimit.
+            Per te identifikuar trendet e perdorimit. Ne mund te perpunojme informacione rreth menyres se si i perdorni Sherbimet tona per te kuptuar me mire se si po perdoren ato ne menyre qe t'i permiresojme ato.
+            Per te percaktuar efektivitetin e fushatave tona te marketingut dhe promovimit. Ne mund te perpunojme informacionin tuaj per te kuptuar me mire se si te ofrojme fushata marketingu dhe promovuese qe jane me te rendesishme per ju.
+            Per te ruajtur ose mbrojtur interesat jetike te nje individi. Ne mund te perpunojme informacionin tuaj kur eshte e nevojshme per te ruajtur ose mbrojtur interesin jetik te nje individi, si p.sh. per te parandaluar demtimin.
+            Per te ofruar kyçje dhe qasje te sigurt ne sherbimet tona. Ne mund te perpunojme informacionin tuaj per te siguruar mbrojtjen e llogarise tuaj nepermjet masave te fuqishme vertetimi per te mbrojtur informacionin tuaj dhe per te mbajtur nje mjedis te sigurt ne internet.
+            Per te ofruar sherbime te personalizuara dhe te pershtatshme. Ne mund te perpunojme informacionin tuaj per t'i pershtatur ofertat tona sipas preferencave dhe nevojave tuaja, duke permiresuar pervojen tuaj te perdoruesit duke ofruar permbajtje dhe veçori qe perputhen me interesat tuaja individuale.
+            Per te permiresuar Sherbimet tona. Ne mund te perpunojme informacionin tuaj ne menyre qe te analizojme modelet e perdorimit dhe komentet per te permiresuar dhe optimizuar vazhdimisht sherbimet tona, duke siguruar nje pervoje me te mire dhe me efikase per perdoruesit tane.
+            <br><br>3. Ne ÇFARe BAZA LIGJORE MBeSHTETEMI NE PeR Te PeRPUNUAR INFORMACIONIN TUAJ?
+            Shkurtimisht: Ne perpunojme informacionin tuaj personal vetem kur besojme se eshte e nevojshme dhe kemi nje arsye te vlefshme ligjore (d.m.th., baze ligjore) per ta bere kete sipas ligjit ne fuqi, si p.sh. me pelqimin tuaj, per te respektuar ligjet, per t'ju ofruar sherbime per te hyre ose permbushur detyrimet tona kontraktuale, per te mbrojtur te drejtat tuaja ose per te permbushur interesat tona legjitime te biznesit.
+            <br><br>
+            Ligji Nr. 06/L –082 per Mbrojtjen e te Dhenave Personale na kerkon te shpjegojme bazat ligjore te vlefshme ne te cilat mbeshtetemi per te perpunuar informacionin tuaj personal. Ne kete kuptim, ne mund te mbeshtetemi ne bazat ligjore te meposhtme per te perpunuar informacionin tuaj personal:
+            <br><br>
+            Pelqimi. Ne mund te perpunojme informacionin tuaj nese ju na keni dhene leje (d.m.th. pelqimin) per te perdorur informacionin tuaj personal per nje qellim te caktuar. Ju mund ta terhiqni pelqimin tuaj ne çdo kohe. Mesoni me shume rreth terheqjes se pelqimit tuaj, me poshte.
+            Permbushja e nje kontrate. Ne mund te perpunojme informacionin tuaj personal kur besojme se eshte e nevojshme te permbushim detyrimet tona kontraktuale ndaj jush, duke perfshire ofrimin e Sherbimeve tona ose me kerkesen tuaj perpara se te lidhim nje kontrate me ju.
+            Respektimi i Obligimit Ligjor. Ne mund te perpunojme informacionin tuaj aty ku besojme se eshte i nevojshem per respektimin e obligimeve tona ligjore, si p.sh. te bashkepunojme me nje organ te zbatimit te ligjit ose agjenci rregullatore, te ushtrojme ose mbrojme te drejtat tona ligjore, ose te zbulojme informacionin tuaj si prove ne nje proces gjyqesor ne te cilin jemi te perfshire.
+            Interesat legjitime. Ne mund te perpunojme informacionin tuaj kur besojme se eshte e nevojshme ne menyre te arsyeshme per te arritur interesat tona legjitime te biznesit dhe keto interesa nuk i tejkalojne interesat dhe te drejtat dhe lirite tuaja themelore. Per shembull, ne mund te perpunojme informacionin tuaj personal per disa nga qellimet e pershkruara ne menyre qe te:
+            Dergojme te perdoruesit tone informacione rreth ofertave dhe zbritjeve speciale per produktet dhe sherbimet tona;
+            <br><br>
+            Zhvillojme dhe shfaqim permbajtje te reklamave te personalizuara dhe perkatese per perdoruesit tone;
+            <br><br>
+            Analizojme se si perdoren Sherbimet tona ne menyre qe ne t'i permiresojme ato per t’i mbajtur perdoruesit tone;
+            <br><br>
+            Mbeshtesim aktivitetet tona te marketingut;
+            <br><br>
+            Diagnostifikojme problemet dhe/ose parandalojme aktivitetet mashtruese;
+            <br><br>
+            Kuptojme se si perdoruesit tone perdorin produktet dhe sherbimet tona ne menyre qe te permiresojme pervojen e perdoruesit;
+            <br><br>
+            Per te krijuar nje mjedis te pademshem dhe te sigurt kur perdorni faqen tone te internetit;
+            <br><br>
+            Per te kuptuar me mire klientet tone dhe preferencat e tyre, duke u ofruar atyre sherbime te personalizuara;
+            <br><br>
+            Per te ofruar sherbime me te mira dhe te perditesuara per klientet tone.
+            <br><br>
+            Mbrojtja e Interesave jetike. Ne mund te perpunojme informacionin tuaj aty ku besojme se eshte e nevojshme per te mbrojtur interesat tuaja jetike ose interesat jetike te nje pale te trete, te tilla si situata qe perfshijne kercenime te mundshme per sigurine e cilitdo person.
+            Interesi publik. Ne mund te perpunojme informacionin tuaj nese perpunimi eshte i nevojshem per kryerjen e nje detyre me interes publik ose per ushtrimin e autoritetit zyrtar qe na eshte dhene.
+            <br><br>4. KUR DHE ME Ke NE NDAJMe INFORMACIONET TUAJ PERSONALE?
+            Shkurtimisht: Ne mund te ndajme informacion ne situata specifike te pershkruara ne kete seksion dhe/ose me palet e treta ne vijim.
+            <br><br>
+            Ne mund te na duhet te ndajme informacionin tuaj personal ne situatat e meposhtme:
+            <br><br>
+            Transferet e biznesit. Ne mund te ndajme ose transferojme informacionin tuaj ne lidhje me ose gjate negociatave te çdo bashkimi, shitjeje te aseteve te kompanise, financimin ose blerjen e te gjithe ose nje pjese te biznesit tone te nje kompani tjeter.
+            Kur perdorim API te Platformes se Hartave Google. Ne mund t'i ndajme informacionin tuaj me disa API te Platformes se Hartave Google (p.sh., API i Hartave Google, API i Vendeve). Ne marrim dhe ruajme ne pajisjen tuaj ("cache") vendndodhjen tuaj. Ju mund ta revokoni pelqimin tuaj ne çdo kohe duke na kontaktuar ne detajet e kontaktit te dhena ne fund te ketij dokumenti.
+            Filialet. Ne mund te ndajme informacionin tuaj me bashkepunetoret tane, ne te cilin rast do t'u kerkojme atyre filialeve te respektojne kete politike te privatesise. Filialet perfshijne kompanine tone meme dhe çdo filial, partner te sipermarrjes se perbashket ose kompani te tjera qe ne kontrollojme ose qe jane nen kontroll te perbashket me ne.
+            Partneret e biznesit. Ne mund te ndajme informacionin tuaj me partneret tone te biznesit per t'ju ofruar produkte, sherbime ose promovime te caktuara.
+            Shitesit, konsulentet dhe ofruesit e tjere te sherbimeve te paleve te treta. Ne mund t'i ndajme te dhenat tuaja me shitesit e paleve te treta, ofruesit e sherbimeve, kontraktoret ose agjentet ("palet e treta") te cilet kryejne sherbime per ne ose ne emrin tone dhe kerkojne qasje ne informacione te tilla per te kryer ate pune. Palet e treta qe mund te ndajme informacionin personal jane, por pa u kufizuar ne: (i) Ofruesit e Sherbimeve financiare/Bankat, me te cilet ne mund te ndajme informacione per te ndihmuar klientet tane te kontaktojne nje institucion financiar te arsyeshem, ne lidhje me ofrimin e ndihmes financiare per te blere mallra ose sherbime shtese; (ii) perdorimi i sherbimeve te nje ofruesi te sherbimit te pagesave, (d.m.th. porta e pageses/payment gateway), me qellim qe te ofrohet nje sherbim permes te cilit mund te paguhet çmimi i blerjes.
+            Ne mund te ndajme informacionin e pagesave me ofruesit e sherbimeve per te perpunuar pagesat, per te parandaluar, zbuluar ose hetuar mashtrimin ose aktivitete te tjera te ndaluara, per te ndihmuar ne zgjidhjen e mosmarreveshjeve, te tilla si rimbursimet ose mbledhjet e mevonshme, si dhe çeshtje te tjera te lidhura me pranimin e kartave te debitit dhe/ose kartat e kreditit.
+            Ne rastet kur perdorni sherbimet e ofruara nga ofruesit e sherbimeve te paleve te treta, ne bejme çdo perpjekje per te siguruar qe, kur pala e trete ka kontakt me te dhenat personale te mbledhura ose te ruajtura nga ne, pala e trete pranon te trajtoje te dhenat e siperpermendura ne perputhje me kushtet e kesaj Politike te Privatesise, dhe sipas ligjeve ne fuqi per mbrojtjen e privatesise dhe te dhenave personale.
+            <br><br>
+            5. CILI eSHTe QeNDRIMI JONe PeR FAQET E INTERNETIT Te PALeVE Te TRETAVE?
+            Shkurtimisht: Ne nuk jemi pergjegjes per sigurine e çdo informacioni qe ju ndani me palet e treta qe ne mund t'i lidhim ose qe reklamojne ne Sherbimet tona, por qe nuk jane te lidhura me Sherbimet tona.
+            <br><br>
+            Sherbimet mund te lidhen me faqet e internetit te paleve te treta, sherbime ne internet ose aplikacione celulare dhe/ose te permbajne reklama nga pale te treta qe nuk jane te lidhura me ne dhe qe mund te lidhen me faqe te internetit, sherbime ose aplikacione te tjera. Prandaj, ne nuk japim asnje garanci ne lidhje me ndonje pale te tille te trete dhe nuk do te jemi pergjegjes per ndonje humbje ose demtim te shkaktuar nga perdorimi i faqeve, sherbimeve ose aplikacioneve te tilla te paleve te treta. Perfshirja e nje lidhjeje drejt nje faqe interneti, sherbimi ose aplikacioni te paleve te treta nuk nenkupton nje miratim nga ne. Ne nuk mund te garantojme sigurine dhe privatesine e te dhenave qe ju i jepni paleve te treta. Çdo e dhene e mbledhur nga palet e treta nuk mbulohet nga kjo politike e privatesise. Ne nuk jemi pergjegjes per permbajtjen ose praktikat, politikat e privatesise dhe sigurise se paleve te treta, duke perfshire faqet e internetit, sherbimet ose aplikacionet e tjera qe mund te lidhen me ose nga Sherbimet tona. Prandaj, falcon shprehimisht mohon pergjegjesine per veprimet dhe/ose demet qe mund te shkaktohen nga faqet e internetit te paleve te treta qe perdoruesit zgjedhin te vizitojne. Ju keshillojme te rishikoni politikat e ketyre paleve te treta dhe t'i kontaktoni drejtperdrejt per t'iu pergjigjur pyetjeve tuaja.
+            <br><br>
+            6. A PeRDORIM NE COOKIES DHE TEKNOLOGJI Te TJERA GJURMIMI?
+            Shkurtimisht: Ne mund te perdorim cookie dhe teknologji te tjera gjurmimi per te mbledhur dhe ruajtur informacionin tuaj.
+            <br><br>
+            Ne mund te perdorim cookie dhe teknologji te ngjashme gjurmimi (si p.sh. web beacons dhe pixels) per te mbledhur informacione kur nderveproni me Sherbimet tona. Disa teknologji te gjurmimit ne internet na ndihmojne te ruajme sigurine e Sherbimeve tona dhe te llogarise tuaj, te parandalojme perplasjet (“crashes”), te rregullojme gabimet (“bugs”), te ruajme preferencat tuaja dhe te ndihmojme me funksionet baze te faqes.
+            <br><br>
+            Informacioni specifik rreth menyres se si ne perdorim teknologji te tilla dhe se si ju mund te refuzoni disa cookie jane specifikuar me lart. Mesoni me shume rreth informacionit te mbledhur nga "Cookies", me siper.
+            <br><br>
+            Google Analytics
+            <br><br>
+            Ne mund te ndajme informacionin tuaj me Google Analytics per te gjurmuar dhe analizuar perdorimin e Sherbimeve. Per te hequr dore nga gjurmimi nga Google Analytics ne Sherbimet tona, vizitoni linkun: . Per me shume informacion mbi praktikat e privatesise se Google, ju keshillojme te lexoni Politiken e Privatesise dhe Kushtet e Perdorimit te Google, ne linkun: .
+            <br><br>
+            7. SI I TRAJTOJMe NE HYRJET TUAJA Ne MEDIAT SOCIALE?
+            Shkurtimisht: Nese zgjidhni te regjistroheni ose te identifikoheni/kyçeni ne Sherbimet tona duke perdorur nje llogari te mediave sociale, ne mund te kemi qasje ne informacione te caktuara rreth jush.
+            <br><br>
+            Sherbimet tona ju ofrojne mundesine per t'u regjistruar dhe per t'u identifikuar duke perdorur te dhenat e llogarise suaj te mediave sociale te paleve te treta (si Facebook ose Google). Ne rast se ju zgjedhni ta beni kete, ne do te marrim informacione te caktuara te profilit tuaj nga ofruesi juaj i mediave sociale. Informacioni i profilit qe marrim mund te ndryshoje ne varesi te ofruesit te mediave sociale ne fjale, por zakonisht perfshin emrin tuaj, adresen e emailit, listen e miqve dhe fotografine e profilit, si dhe informacione te tjera qe ju zgjedhni t’i beni publike ne nje platforme te tille te mediave sociale.
+            <br><br>
+            Ne do te perdorim informacionin qe marrim vetem per qellimet qe pershkruhen ne kete politike te privatesise ose qe ju jane bere te qarta ndryshe ne Sherbimet perkatese. Ju lutemi vini re se ne nuk kontrollojme dhe nuk jemi pergjegjes per perdorime te tjera te informacionit tuaj personal nga ofruesi juaj i mediave sociale te paleve te treta. Ne ju keshillojme qe te rishikoni politiken e tyre te privatesise per te kuptuar se si ata mbledhin, perdorin dhe ndajne informacionin tuaj personal dhe si mund te vendosni preferencat tuaja te privatesise ne faqet e internetit dhe aplikacionet e tyre.
+            <br><br>
+            8. SA KOHe E RUAJMe NE INFORMACIONIN TUAJ?
+            Shkurtimisht: Ne e mbajme informacionin tuaj per aq kohe sa eshte e nevojshme per te permbushur qellimet e pershkruara ne kete politike te privatesise, perveç nese kerkohet ndryshe nga ligji.
+            <br><br>
+            Ne do t'i mbajme te dhenat tuaja personale vetem per aq kohe sa eshte e nevojshme per qellimet e percaktuara ne kete Politike te Privatesise, perveç nese kerkohet ose lejohet me ligj nje periudhe me e gjate ruajtjeje (siç jane kerkesat tatimore, kontabiliteti ose kerkesa te tjera ligjore). Ne mund t'i mbajme te dhenat tuaja personale pas mbylljes se llogarise tuaj per te parandaluar mashtrimin, per te mbledhur çdo borxh te papaguar, per te zgjidhur mosmarreveshjet, per te zbatuar marreveshje dhe/ose kontrata, per qellime te percaktuara nga legjislacioni tatimor, per te ndihmuar çdo hetim dhe per te ndermarre veprime te tjera te lejuara dhe/ose kur kerkohet nga ligjet ne fuqi. Kur nuk kemi nevoje te vazhdueshme legjitime te biznesit per te perpunuar informacionin tuaj personal, ne do ta fshijme ose anonimizojme nje informacion te tille, ose, nese kjo nuk eshte e mundur (per shembull, per shkak se informacioni juaj personal eshte ruajtur ne arkivat rezerve), atehere ne do te ruajme te dhenat tuaja personale dhe do te izolojme ato nga çdo perpunim i metejshem derisa te jete e mundur fshirja. Ne rastet kur nuk eshte me e nevojshme per ne, ose kur mbarojne detyrimet ligjore per te ruajtur te dhenat tuaja personale, ose kur qellimi per te cilin jane mbledhur dhe/ose ruajtur te dhenat tuaja personale pushon, ne shkaterrojme te dhenat e siperpermendura ne menyre te sigurt si dhe ne perputhje me ligjin ne fuqi per privatesine dhe mbrojtjen e te dhenave personale, dhe ne perputhje me politikat tona te brendshme.
+            <br><br>
+            9. SI E MBAJMe Te SIGURT INFORMACIONIN TUAJ?
+            Shkurtimisht: Ne synojme te mbrojme informacionin tuaj personal permes nje sistemi masash sigurie, organizative dhe teknike.
+            <br><br>
+            Ne mbrojme te dhenat tuaja duke perdorur masa te larta sigurie teknologjike, fizike dhe administrative per te minimizuar rrezikun e çdo humbjeje, keqperdorimi, qasje te paautorizuar, zbulimi ose ndryshimi te te dhenave. Disa nga masat mbrojtese qe ne perdorim jane "firewalls", enkriptimi i te dhenave, nivelet e larta te kontrollit dhe kriteret e autorizimit per qasje ne te dhenat tuaja personale. Nese keni arsye te besoni se llogaria juaj eshte komprometuar ne ndonje menyre, ju lutemi na kontaktoni menjehere ne contact@falcon.com. Ne kemi zbatuar masa te pershtatshme dhe te arsyeshme sigurie teknike dhe organizative te dizajnuara per te mbrojtur sigurine e çdo informacioni personal qe perpunojme. Megjithate, pavaresisht masave mbrojtese dhe perpjekjeve tona per te siguruar informacionin tuaj, asnje transmetim elektronik permes internetit ose teknologjia e ruajtjes se informacionit nuk mund te garantohet te jete 100% i sigurt, keshtu qe ne nuk mund te premtojme ose garantojme se hakeret, kriminelet kibernetike ose pale te tjera te treta te paautorizuara nuk do te jene te afte per te mposhtur sigurine tone dhe per te mbledhur, aksesuar, vjedhur ose modifikuar ne menyre te papershtatshme informacionin tuaj. Edhe pse ne do te bejme çmos per te mbrojtur informacionin tuaj personal, transmetimi i informacionit personal ne dhe nga Sherbimet tona eshte ne rrezikun tuaj. Ju duhet te perdorni Sherbimet vetem brenda nje mjedisi te sigurt.
+            <br><br>
+            10. A MBLEDHIM NE INFORMACION NGA Te MITURIT?
+            Shkurtimisht: Ne, me vetedije, nuk mbledhim te dhena nga ose tregtojme per te miturit nen moshen trembedhjete (13) vjeç.
+            <br><br>
+            Ne nuk mbledhim me vetedije, kerkojme te dhena nga, apo tregtojme per femijet nen 13 vjeç. Personat nen moshen trembedhjete (13) vjeç nuk lejohen te hapin nje llogari tek ne, ose te japin informacionin e tyre personal. Perdoruesit te cilet jane te pakten trembedhjete (13) vjeç, por nen moshen tetembedhjete (18) vjeç mund te regjistrohen tek ne, por vetem nese kane pelqimin e prindit dhe/ose te kujdestarit te tyre ligjor, duke perfshire pelqimin per kete Politike te Privatesise per, dhe ne emer te te miturve nga mosha trembedhjete (13) deri ne tetembedhjete (18).
+            <br><br>
+            Ne rastet kur perpunimi i te dhenave behet per personat nen moshen tetembedhjete (18) vjeç, ne bejme perpjekje te vazhdueshme per te verifikuar qe pelqimi eshte dhene dhe/ose autorizuar nga nje prind dhe/ose kujdestar ligjor i te miturve, duke marre parasysh kapacitetet teknike te disponueshme.
+            <br><br>
+            Sipas kesaj Politike te Privatesise dhe sipas Kushteve tona te Perdorimit, prinderit dhe/ose kujdestaret ligjore jane pergjegjes per dhenien e pelqimeve te nevojshme per femijet qe nuk kane mbushur moshen madhore. falcon ne asnje rrethane nuk eshte pergjegjese per veprimet e prindit dhe/ose kujdestarit ligjor ne lidhje me nje te mitur nen perkujdesin e tyre. Ne ju keshillojme fuqimisht qe te mbikeqyrni me kujdes femijet gjate perdorimit te Sherbimeve tona. Nese ne kuptojme se jane mbledhur informacione personale nga perdorues nen moshen 13 vjeç, ne do te ç’aktivizojme llogarine dhe do te marrim masa te arsyeshme per t'i fshire menjehere keto te dhena nga te bazat tona te te dhenave. Nese ju viheni ne dijeni per ndonje te dhene qe ne mund te kemi mbledhur pa vetedije nga femijet nen moshen 13 vjeç, ju lutemi na kontaktoni ne contact@falcon.com.
+            <br><br>
+            Duke perdorur Sherbimet tona, ju deklaroni dhe pohoni se jeni te pakten 18 vjeç ose, se jeni prindi ose kujdestari ligjor i nje te mituri dhe ju jepni pelqimin qe i mituri te perdore Sherbimet.
+            <br><br>
+            11. CILAT JANe Te DREJTAT TUAJA Te PRIVATeSISe?
+            Shkurtimisht: Ne disa rajone ne Evrope, por edhe ne Republiken e Kosoves, ju keni te drejta qe ju mundesojne qasje me te madhe dhe kontroll mbi te dhenat tuaja personale. Ju mund te rishikoni, ndryshoni ose mbyllni llogarine tuaj ne çdo kohe.
+            <br><br>
+            Sipas Ligjit Nr. 06/L –082 per Mbrojtjen e te Dhenave Personale, ju keni disa te drejta. Keto mund te perfshijne:
+            <br><br>
+            te drejten per te kerkuar qasje dhe per te marre nje kopje te informacionit tuaj personal,
+            e drejta per te kerkuar korrigjim ose fshirje (e drejta per t'u harruar);
+            te drejten per te kufizuar perpunimin e informacionit tuaj personal;
+            nese eshte e aplikueshme, e drejta per transferimin e te dhenave; dhe
+            e drejta per te mos iu nenshtruar vendimmarrjes se automatizuar.
+            Ne rrethana te caktuara, ju gjithashtu mund te keni:
+            <br><br>
+            e drejta per te kundershtuar perpunimin e informacionit tuaj personal. Ju mund ta beni nje kerkese te tille duke na kontaktuar duke perdorur te dhenat e kontaktit te vendosura ne seksionin "SI MUND Te NA KONTAKTONI PeR KeTe POLITIKe Te PRIVATeSISe?" me poshte.
+            Nese keni ndonje pyetje, ankese ose sygjerim ne lidhje me kete Politike te Privatesise, ose te drejten tuaj per privatesi dhe mbrojtjen e te dhenave tuaja personale, mund te na kontaktoni direkt ne contact@falcon.com.
+            <br><br>
+            Ne do te shqyrtojme dhe do te veprojme sipas çdo kerkese ne perputhje me ligjet ne fuqi per mbrojtjen e te dhenave.
+            <br><br>
+            Nese ndodheni ne Republiken e Kosoves dhe besoni se ne i perpunojme ne menyre te paligjshme te dhenat tuaja personale, ju gjithashtu keni te drejte te ankoheni ne Agjencine per Informim dhe Privatesi.
+            <br><br>
+            Terheqja e pelqimit tuaj: Nese ne mbeshtetemi ne pelqimin tuaj per te perpunuar informacionin tuaj personal, ju keni te drejte te terhiqni pelqimin tuaj ne çdo kohe. Ju mund ta terhiqni pelqimin tuaj ne çdo kohe duke na kontaktuar duke perdorur te dhenat e kontaktit te dhena ne seksionin "SI MUND Te NA KONTAKTONI PeR KeTe POLITIKe Te PRIVATeSISe?" me poshte ose duke perditesuar preferencat tuaja.
+            <br><br>
+            Megjithate, ju lutemi vini re se kjo nuk do te ndikoje ne ligjshmerine e perpunimit perpara terheqjes se tij dhe as nuk do te ndikoje ne perpunimin e informacionit tuaj personal te kryer duke u mbeshtetur ne baza te tjera te ligjshme te perpunimit perveç pelqimit.
+            <br><br>
+            Te hiqni dore nga njoftimet e marketingut dhe promovimit: Ju mund te ç’abonoheni nga njoftimet tona te marketingut dhe promovimit ne çdo kohe duke klikuar ne vegezen e ç’regjistrimit ne emailet qe dergojme, ose duke na kontaktuar ne detajet e dhena ne seksionin "SI MUND Te NA KONTAKTONI PeR KeTe POLITIKe Te PRIVATeSISe?" me poshte. Me pas do te hiqeni nga listat e marketingut. Megjithate, ne ende mund te komunikojme me ju - per shembull, per t'ju derguar mesazhe te lidhura me sherbimet qe jane te nevojshme per administrimin dhe perdorimin e llogarise tuaj, per t'iu pergjigjur kerkesave te sherbimit ose per qellime te tjera jo marketingu.
+            <br><br>
+            Informacioni i Llogarise
+            <br><br>
+            Nese ne çdo kohe deshironi te rishikoni ose ndryshoni informacionin ne llogarine tuaj ose te mbyllni llogarine tuaj, mund te:
+            <br><br>
+            Kyceni ne llogarine tuaj dhe perditesoni llogarine tuaj te perdoruesit (account settings);
+            Na kontaktoni duke perdorur informacionin e dhene per kontaktin.
+            Me kerkesen tuaj per te mbyllur llogarine tuaj, ne do te çaktivizojme ose fshijme llogarine tuaj dhe informacionin nga bazat tona aktive te te dhenave. Megjithate, ne mund te mbajme disa informacione ne dosjet tona per te parandaluar mashtrimin, per te zgjidhur problemet, per te ndihmuar ne çdo hetim, per te zbatuar kushtet tona ligjore dhe/ose per te permbushur kerkesat ligjore ne fuqi.
+            <br><br>
+            Cookies dhe teknologji te ngjashme: Shumica e shfletuesve te faqeve te internetit jane caktuar te pranojne cookies si parazgjedhje. Nese preferoni, zakonisht mund te zgjidhni qe shfletuesi juaj te caktoje qe te heqe cookies dhe te refuzoje cookies. Nese zgjidhni te hiqni cookies ose te refuzoni cookies, kjo mund te ndikoje ne disa veçori ose sherbime te Sherbimeve tona.
+            <br><br>
+            Nese keni pyetje ose komente ne lidhje me te drejtat tuaja te privatesise, mund te na dergoni email ne contact@falcon.com.
+            <br><br>
+            12. KONTROLLET PeR VEÇORI Te MOS GJURMIMIT (“DNT”)
+            Shumica e shfletuesve te faqeve te internetit dhe disa sisteme operative celulare dhe aplikacione celulare perfshijne nje veçori ose cilesim Mos-Gjurmo ("DNT") qe mund ta aktivizoni per te sinjalizuar preferencen tuaj te privatesise qe te mos monitorohen dhe mblidhen te dhena per aktivitetet tuaja te shfletimit ne internet. Ne kete faze nuk eshte finalizuar asnje standard teknologjik uniform per njohjen dhe zbatimin e sinjaleve DNT. Si i tille, ne aktualisht nuk i pergjigjemi sinjaleve te shfletuesit DNT ose ndonje mekanizmi tjeter qe komunikon automatikisht zgjedhjen tuaj per te mos u gjurmuar ne internet. Nese miratohet nje standard per gjurmimin ne internet qe duhet te ndjekim ne te ardhmen, ne do t'ju informojme per kete praktike ne nje version te rishikuar te kesaj Politike te Privatesise.
+            <br><br>
+            13. A BeJMe NE PeRDITeSIME Ne KeTe POLITIKe Te PRIVATeSISe?
+            Shkurtimisht: Po, ne do ta perditesojme kete politike sipas nevojes per te qendruar ne perputhje me ligjet perkatese.
+            <br><br>
+            Ne mund ta perditesojme kete politike te privatesise here pas here. Versioni i perditesuar do te tregohet nga nje date e perditesuar ("Perditesimi i fundit dhe data") dhe versioni i perditesuar do te hyje ne fuqi sapo te jete i disponueshem. Nese bejme ndryshime materiale ne kete politike privatesie, ne mund t'ju njoftojme ose duke postuar ne menyre te dukshme nje njoftim per keto ndryshime ose duke ju derguar drejtperdrejt nje njoftim. Ne ju inkurajojme qe ta rishikoni shpesh kete politike privatesie per t'u informuar se si ne e mbrojme informacionin tuaj.
+            <br><br>
+            Ju lutemi vini re se nese modifikimet dhe/ose shtesat ne kete Politike te Privatesise jane te nje natyre thelbesore, refuzimi juaj per t’i pranuar perditesimet e tilla mund te çoje ne perfundimin e marredhenies tuaj me ne, d.m.th. ne perfundimin e ofrimit te Sherbimeve tona per ju. Prandaj, nese vendosni te mos ndani me ne te dhena te caktuara, mund te mos jeni ne gjendje te perdorni Sherbime te caktuara.
+            <br><br>
+            Ne rast se ndonje pjese, paragraf dhe/ose nentitull i kesaj Politike te Privatesise konsiderohet dhe/ose konstatohet se eshte i pavlefshem nga ndonje autoritet kompetent per çfaredo arsye, pjeset e tjera te kesaj Politike te Privatesise mbeten ne fuqi dhe ruajne efektin e plote ligjor, pa u prekur nga pjesa tjeter e konsideruar e pavlefshme.
+            <br><br>
+            14. SI MUND Te NA KONTAKTONI PeR KeTe POLITIKe Te PRIVATeSISe?
+            Nese ju keni pyetje ose komente ne lidhje me kete Politike te Privatesise, mund te na kontaktoni permes email adreses ne ose te na kontaktoni permes adreses postare ne:
+            <br><br>
+            falcon Inc., Dega ne Kosove
+            <br><br>
+            Graçanice,
+            <br><br>
+            Magjistralja Prishtine – Ferizaj,
+            <br><br>
+            Km i 6-te, 10500,
+            <br><br>
+            Republika e Kosoves
+            <br><br>
+            Telefon: +381(0) 38 61 61 61
+            <br><br>
+            
+            15. SI MUND Te RISHIKONI, PeRDITeSONI APO Te FSHINI Te DHeNAT Qe MBLEDHIM NGA JU?<br><br>
+            Bazuar ne Ligjin Nr. 06/L –082 per Mbrojtjen e te Dhenave Personale, ju mund te keni te drejte te kerkoni qasje ne informacionin personal qe mbledhim nga ju, ta ndryshoni ate informacion, ta fshini ate, te jepni pelqimin tuaj, te terhiqni pelqimet paraprake ose kerkoni ç’aktivizimin e llogarise tuaj. Ju gjithashtu keni mundesine e transferimit te te dhenave tuaja duke ju mundesuar shkarkimin e tyre. Per te kerkuar te rishikoni, perditesoni ose fshini informacionin tuaj personal ose nese keni ndonje pyetje, ju lutemi na vizitoni ose na kontaktoni drejtperdrejt ne contact@falcon.com.   </div>
+          </section>
+          <script src="js/searchbar.js"></script>
+</body>

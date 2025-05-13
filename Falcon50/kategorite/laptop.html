@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falcon50</title>
+  <link rel="icon" href="../img/logo/50white.webp">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <script src="https://kit.fontawesome.com/20126e87c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="section-one">
+    
+    <div class="topbar">
+    <h1 class="topbar-content">
+        Mbështetu tek ne. Dërgesa 100% të sigurta, kudo në Kosovë.
+      </h1>
+    </div>
+    <header>
+      <div class="logo-container">
+        <a href="../index.html">
+        <img src="../img/logo/falcon50.webp" alt="" class="logo">
+        </a>
+      </div>
+      <div class="for-container">
+        <input type="text"  id="searchbar" placeholder="Kërko produkte..." oninput="searchProduct()">
+        
+    </div>
+    <ul id="product-list" style="display: none;"></ul>     
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../cart.html"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="../blerjet.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="../welcome.html" class="re"><i class="fa-solid fa-user"></i><p id="greeting"></p></a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>
+        <div class="nav-main-container">
+        <div class="navbar-main">
+          <i class="fa-solid fa-bars"></i>
+          <nav>
+            <ul>
+              <li><a href="" ><span class="active">Kategorite</span></a></li>
+              <li><a href="outlet.html">Outlet</a></li>
+              <li><a href="qfare-ka-te-re.html">Qfare ka te re</a></li
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-main2">
+          <img class="appleimg" src="https://iqq6kf0xmf.gjirafa.net/images/ce80ffe8-09e5-4635-8c44-45dced59df48/ce80ffe8-09e5-4635-8c44-45dced59df48.webp?w=160" alt="">
+          <div class="i">
+            <a href="../chatbot.html">
+          <i class="fa-regular fa-comments"></i>
+            </a>
+          <h1>Chat</h1>
+          </div>
+        </div>
+</div>
+</main>
+</section>
+<div class="sidebar-show" id="sidebar-show" style="display: none;">
+          <ul>
+            <li>Kategorite</li>
+            <hr>
+            <li><i class="fa-solid fa-desktop"></i><a href="pc.html">Kompjuter, Laptop & Monitor</a></li>
+            <li><i class="fa-solid fa-gamepad"></i><a href="celular.html">Celular, Tablet & Navigim</a></li>
+            <li><i class="fa-solid fa-mobile"></i><a href="tv.html">TV, Audio & Foto</a></li>
+            <li><i class="fa-solid fa-tv"></i><a href="gaming.html">Gaming</a></li>
+            <li><i class="fa-solid fa-headphones"></i><a href="aksesore.html">Aksesore</a></li>
+            <li><i class="fa-solid fa-microchip"></i><a href="pjese.html">Pjese per kompjuter</a></li>
+            <hr>
+            <li><i class="fa-solid fa-box-open"></i><a href="kategorite/outlet.html">Outlet</a></li>
+            <li><i class="fa-solid fa-star"></i><a href="kategorite/qfare-ka-te-re.html">Qfare ka te re</a></li>
+          </ul>
+        </div>
+<div class="bottom-navber" id="bottom-navber">
+  <div class="fq-kryesore">
+    <a href="index.html">
+    <i class="fa-solid fa-home"></i>
+    <p>Ballina</p>
+  </a>
+  </div>
+  <div class="kategorit">
+    <a href="#sidebar-show" id="toggle-sidebar">
+    <i class="fa-solid fa-bars"></i>
+    <p>Kategorite</p>
+    </a>
+  </div>
+  <div class="shporta">
+    <a href="blerjet.html">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <p>Shporta</p>
+    </a>
+  </div>
+  <div class="chat">
+    <a href="chatbot.html">
+    <i class="fa-solid fa-comments"></i>
+    <p>Chat</p>
+    </a>
+  </div>
+  <div class="kyqu">
+    <a href="login.html">
+    <i class="fa-solid fa-user"></i>
+    <p>Kyqu</p>
+    </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('toggle-sidebar').addEventListener('click', function(e) {
+    e.preventDefault();
+    const sidebar = document.getElementById('sidebar-show');
+    sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+  });
+  
+  
+  </script>
+<section class="productoes">
+        <div id="produktiContainer"></div>
+</section>
+          <footer>
+      
+  <div class="div-f-one">
+    <div class="footer-logo">
+      <img src="../img/logo/falcon50.webp" alt="">
+  </div>
+  <div class="content">
+    <p>Rri i lidhur me Falcon50</h3>
+    <div class="icons-f">
+      <a href="https://www.instagrem.com/falcon50" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/falcon50" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.x.com/falcon50" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <a href="../tedrejtat.html" class="a"><p>KUSHTET E PËRDORIMIT – GJIRAFA</p></a>
+    <a href="../privatesia.html" class="b"><p>Politika e Privatësisë</p></a>
+  </div>
+  </div>
+  <div class="div-f-one">
+    <div class="content">
+      <p><b>Llogaria</b></p>
+      <a href="../cart.html" class="b"><p>Lista e deshirave</p></a>
+      <a href="../blerjet.html" class="b"><p>Porosite</p></a>
+    </div>
+    </div>
+    <div class="div-f-one">
+      <div class="content">
+        <a href="" class="b"><p><b>Pyetje te shpeshta</b></p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Per Falcon50</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Pagesat</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Garancioni</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Transporti</p></a>
+        <a href="../fot/pagesat.html" class="b"><p>Porsite</p></a>
+        </div>
+        </div>
+        <div class="div-f-one">
+          <div class="content">
+            <a href="" class="b"><p><b>Kontakti</b></p></a>
+            <a href="mailto:contact@falcon 50.com"  class="b"><p>contact@falcon50.com</p></a>
+            <a  href="" class="c"><i class="fa-solid fa-phone" id="ic"></i><p> +383 38 616 161</p></a>
+            <a href="" class="c"><i class="fa-brands fa-whatsapp"id="ic"></i><br><i id="icc" class="fa-brands fa-viber"></i><p>+383 45 101 953</p></a>
+            <p>Per kerkesa te ofertave:</p>
+            <a href="mailto:b2b@falcon50.com"class="c"><p>b2b@falcon50.com</p></a>
+            <p class="cp">Magjistralja Prishtinë-Ferizaj, kilometri i 6-të (Lapnasellë), Prishtinë, Kosovë</p>
+          </div>
+       
+</footer>
+       <script>
+        
+     const produkte = [    
+     {
+"id":3,
+"name": "Laptop Lenovo Legion Pro 7 16IRX9H, 16\"",
+"price": "€3,299.50",
+"description": "Laptop i fuqishëm për lojëra dhe krijim, me procesor Intel Core i9 dhe ekran 16\".",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/1bd12f6c-81d6-4e9b-97d0-0d5200530935/1bd12f6c-81d6-4e9b-97d0-0d5200530935.jpeg?w=490",
+"category": "Laptop"
+},
+{
+"id":13,
+"name": "Apple MacBook Air 13.3\", M1 8-core, 8GB, 256GB",
+"price": "779.50 €",
+"description": "Gjenerata e re e MacBook Air nga Apple është një revolucion i vërtetë për sa i takon performancës së këtij laptopi kompakt. Ai ofron të gjitha tiparet dhe veçoritë tuaja të preferuara, por performanca është në një nivel tjetër. Me MacBook Air të ri, ju mund të redaktoni video me rezolucion të lartë e po ashtu të përfitoni nga aplikacionet profesionale.",
+"image": "https://iqq6kf0xmf.gjirafa.net/images/2deaa62e-086a-4c4f-b10a-2554e9b7c360/2deaa62e-086a-4c4f-b10a-2554e9b7c360.jpeg?w=490",
+"category": ""
+},
+{
+        "id": 102,
+        "name": "Laptop ASUS TUF Gaming A15 FA506NC-HN006, 15.6\", ",
+        "price": "699.50 €",
+        "description": "Zbuloni fuqinë dhe performancën e jashtëzakonshme me laptopin ASUS TUF Gaming A15 FA506NC-HN006. Ky laptop i dizajnuar për lojtarët e apasionuar ofron një ekran të mrekullueshëm 15.6 inç me teknologji të avancuar, duke ju lejuar të përjetoni çdo detaj me ngjyra të gjalla dhe kontrast të shkëlqyer.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/bcca57f4-600d-4219-8763-8f1205f7bda4/bcca57f4-600d-4219-8763-8f1205f7bda4.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 103,
+        "name": "Laptop Lenovo NB V15 G4 IRU, 15.6’’",
+        "price": "619.50 €",
+        "description": "Laptop Lenovo NB V15 G4 IRU, 15.6’’, Intel Core i7, 16GB RAM, 512GB SSD, Integrated Intel Iris Xe Graphics, i zi",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/d8f6c5f5-ad5d-4e0e-9ba4-ddb117ebacaa/d8f6c5f5-ad5d-4e0e-9ba4-ddb117ebacaa.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 103,
+        "name": "Apple MacBook Pro 16\", M3 Pro 12-Core, 36GB, 512GB, 18-Core GPU, Space Black",
+        "price": "2,999.50  €",
+        "description": "Njihuni me Apple MacBook Pro 16\" M3 Pro, një laptop me performancë të lartë që ripërcakton kufijtë e kompjuterit portativ. Kjo pajisje është projektuar posaçërisht për të përmbushur nevojat e profesionistëve, krijuesve dhe përdoruesve të fuqishëm që kërkojnë fuqi të pashembullt përpunuese, me bujari ekran me përmasa dhe risitë më të fundit në teknologji.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/b75d0096-3ceb-4b6c-94c4-a525b6aaa370/b75d0096-3ceb-4b6c-94c4-a525b6aaa370.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 106,
+        "name": "Laptop Acer Nitro V 15 ANV15-41",
+        "price": "599.50 €",
+        "description": "Acer Nitro V është një laptop portativ lojërash dhe AI ​​me performancë të lartë, i krijuar për të përmbushur me lehtësi nevojat e kërkuara. Ai përmban një procesor AMD Ryzen 5 6600H me gjashtë bërthama dhe dymbëdhjetë fije, që funksionon me një shpejtësi ore bazë prej 3.3 GHz dhe turbo që rrit deri në 4.5 GHz. E çiftuar me 16 GB RAM DDR5 që funksionon në 5600 MHz dhe e zgjerueshme deri në 32 GB, kjo makinë siguron kryerje të pandërprerë të shumë detyrave dhe reagim.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/85d1076d-eb93-47ec-a10b-b66e4dd713a7/85d1076d-eb93-47ec-a10b-b66e4dd713a7.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 108,
+        "name": "Laptop MSI Stealth A16 AI+ A3XVGG, 16\"",
+        "price": "3,055.50€",
+        "description": "Ky laptop lojrash përmban një ekran OLED 16\" me rezolucion 2560x1600, një sipërfaqe me shkëlqim dhe një shkëlqim maksimal prej 400 nits. Ofron një shpejtësi rifreskimi 240 Hz me një raport pamjeje 16:10, duke ofruar një përvojë vizuale gjithëpërfshirëse. Mundësuar nga Procesori AMD Ryzen AI 9 (HX 370) me 12 bërthama, një maksimum frekuenca prej 3.3 GHz dhe frekuenca e rritjes deri në 5.1 GHz, ky laptop siguron performancë të lartë, ai gjithashtu vjen me një memorie të fshehtë të procesorit 24 MB dhe është i pajisur me 32 GB RAM LPDDR5X që funksionon në 7500 MHz.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/9ab82ab0-d247-4ebc-97cc-e241d50a3b92/9ab82ab0-d247-4ebc-97cc-e241d50a3b92.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 109,
+        "name": "Laptop MSI Titan 18 HX A14VIG, 18\",",
+        "price": "4,999.50€",
+        "description": "Laptopi MSI Titan 18 HX A14VIG është një central elektrik, me Windows 11 Pro dhe një procesor Intel Core i9-14900HX me 24 bërthama, duke ofruar shpejtësi deri në 5.8 GHz. Ai mburret me një RAM masiv 128 GB DDR5 (4x32 GB) dhe 4 TB hapësirë ​​ruajtëse të shpejtë M.2 PCIe Gen4, me një slot shtesë Gen5 NVMe për përmirësimet e ardhshme. ",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/8cead2d4-b0cd-47fc-b4ea-1acb8a44624b/8cead2d4-b0cd-47fc-b4ea-1acb8a44624b.webp?w=400  ",
+        "category": ""
+        },
+        {
+        "id": 109,
+        "name": "Laptop ASUS ROG Strix, 16\", ",
+        "price": "2,099.50 €",
+        "description": "Zbuloni fuqinë e paimagjinueshme me Laptopin ASUS ROG Strix! Me një ekran të mahnitshëm 16\" dhe procesorin Intel i7-13650HX, ky laptop është krijuar për lojtarët dhe profesionistët e krijimit të përmbajtjes. 16 GB RAM dhe 512 GB SSD garantojnë shpejtësi dhe kapacitet të lartë ruajtjeje, ndërsa karta grafike NVIDIA GeForce RTX 4080 ofron performancë të jashtëzakonshme për grafika të avancuara. I dizajnuar në një ngjyrë të zezë elegante, ky laptop është jo vetëm një mjet pune, por edhe një stil i jetesës. Përgatituni për një eksperiencë të paharrueshme!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/9f272d2e-77ad-4013-b05d-a8b66d4dc58a/9f272d2e-77ad-4013-b05d-a8b66d4dc58a.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 110,
+        "name": "Laptop Lenovo Legion Pro, 16\",",
+        "price": "3,913.50 €",
+        "description": "Përjetoni fuqinë e jashtëzakonshme me Laptopin Lenovo Legion Pro! Me ekran 16\" dhe procesorin Intel i9-14900HX, ky laptop është krijuar për lojtarët dhe profesionistët e krijimtarisë. 32 GB RAM dhe 1 TB SSD sigurojnë performancë të shpejtë dhe hapësirë të bollshme për të gjitha projektet tuaja. Me kartën grafike NVIDIA GeForce RTX 4080, çdo lojë dhe aplikacion do të funksionojnë me detaje mahnitëse. Dizajni elegant në ngjyrë të zezë i jep një pamje moderne dhe atraktive. Zgjidhni Lenovo Legion Pro për një përvojë të papërsëritshme!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/1e63a8cc-cca6-4595-b1e2-5a079953483a/1e63a8cc-cca6-4595-b1e2-5a079953483a.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 225,
+        "name": "Laptop Lenovo IdeaPad 3 CB 15IJL6, 15.6\", Intel Celeron, 4GB RAM, 64GB SSD, Intel UHD Graphics, i hirtë",
+        "price": "249.50 €",
+        "description": "y laptop është i pajisur me karakteristika të shkëlqyeshme. Ai mundësohet nga një procesor 2 -core Intel Celeron N4500 që funksionon me një frekuencë 1.1 GHz deri në 2.8 GHz. Procesori plotësohet me 4GB LPDDR4 (në pllakë). Hard disku 64 GB SSD shërben për të dhënat. Disku optik mungon. ",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/c00947c6-d4e5-4b88-86d5-09ef1fd9ee91/c00947c6-d4e5-4b88-86d5-09ef1fd9ee91.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 226,
+        "name": "Laptop Dell Inspiron 3520, 15.6\", Intel core i5-1235U, 8GB RAM, 512GB SSD, Intel UHD Graphics, Windows 11 Home, i zi",
+        "price": "469.50 €",
+        "description": "Laptop Dell Inspiron 3520, 15.6\", Intel core i5-1235U, 8GB RAM, 512GB SSD, Intel UHD Graphics, Windows 11 Home, i zi",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/f22101ba-b870-4756-90c9-07e9d6004d16/f22101ba-b870-4756-90c9-07e9d6004d16.webp?w=400",
+        "category": ""
+        },
+        {
+        "id": 227,
+        "name": "Laptop HP Victus Gaming, 16.1\", Intel i7-14650HX, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4070, i bardhë",
+        "price": "1,489.50 €",
+        "description": "Përjetoni lojërat në një nivel të ri me Laptopin HP Victus Gaming! Me një ekran 16.1\" dhe procesorin Intel i7-14650HX, ky laptop ofron performancë të jashtëzakonshme për çdo lojë. Me 16 GB RAM dhe 1 TB SSD, do të keni hapësirë të mjaftueshme dhe shpejtësi të shkëlqyer për të gjithë aplikacionet tuaja. Kartela grafike NVIDIA GeForce RTX 4070 siguron grafikë mahnitëse dhe detaje të jashtazakonshme në çdo lojë. Dizajni i bardhë i jep një pamje elegante dhe moderne, duke e bërë këtë laptop jo vetëm të fuqishëm, por edhe të stilit. Zgjidhni HP Victus Gaming dhe përjetoni lojërat si kurrë më parë!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/0ae6c5af-18f5-4611-b9e1-ada6e893cb92/0ae6c5af-18f5-4611-b9e1-ada6e893cb92.webp?w=400",
+        "category": ""
+        },{
+        "id": 228,
+        "name": "Laptop HP OMEN 14-fb0030nw, 14\", Intel 185H, 32 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4070, i bardhë",
+        "price": "2,149.50 €",
+        "description": "Përjetoni fuqinë e lojrave me Laptopin HP OMEN 14-fb0030nw! Me një ekran 14\ dhe procesorin Intel 185H, ky laptop është krijuar për performancë maksimale. 32 GB RAM dhe 1 TB SSD sigurojnë hapësirë të mjaftueshme për të gjitha aplikacionet dhe lojrat tuaja, ndërsa karta grafike NVIDIA GeForce RTX 4070 garanton grafikë mahnitëse dhe një përvojë të paharrueshme. Dizajni i bardhë i jep një pamje elegante dhe moderne. Ideal për lojtarët dhe profesionistët, ky laptop është partneri perfekt për aventurat tuaja digjitale!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/78f48389-b02e-4078-8ecd-cfae188f0e6b/78f48389-b02e-4078-8ecd-cfae188f0e6b.webp?w=400",
+        "category": ""
+        },{
+        "id": 229,
+        "name": "Laptop Lenovo YOGA PRO, Core ULTRA 9 185H, 64GB, 1TB SSD, 16\", 165Hz, RTX 4070 8GB, Win 11 Pro, i hirtë",
+        "price": "2,639.50 €",
+        "description": "Lenovo Yoga Pro 9 është një laptop premium me një dizajn metalik të qëndrueshëm dhe një ekran mini-LED 16\" 3.2K, 165Hz, që ofron ngjyra të pastra dhe të kalibruara. I pajisur me procesorin Intel® Core™ Ultra 9 me 16 bërthama dhe kartën grafike NVIDIA® GeForce RTX™ 4070, ky laptop siguron performancë të shkëlqyer për lojëra dhe punë krijuese.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/0e377a69-c724-44a9-afa5-209991a4b170/0e377a69-c724-44a9-afa5-209991a4b170.webp?w=400",
+        "category": ""
+        },{
+        "id": 230,
+        "name": "Laptop Dell Inspiron 5440, 14\", Intel 120U, 16 GB RAM, 1 TB SSD, i kaltër",
+        "price": "739.50 €",
+        "description": "Laptopi Dell Inspiron 5440 është partneri ideal për çdo profesionist dhe student. Me ekranin e tij 14 inç, ai ofron një pamje të shkëlqyer dhe një dizajn elegant në ngjyrë të kaltër. I pajisur me procesorin Intel 120U dhe 16 GB RAM, ky laptop garanton performancë të lartë dhe shpejtësi në çdo detyrë. Kapaciteti prej 1 TB SSD siguron hapësirë të bollshme për të gjitha skedarët tuaj, duke e bërë atë perfekt për ruajtjen e dokumenteve, fotografive dhe videove. Zgjidhni Dell Inspiron 5440 për një përvojë të shkëlqyer kompjuterike!",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/92b1d093-9151-4708-8ef4-ee0e7b3244c2/92b1d093-9151-4708-8ef4-ee0e7b3244c2.webp?w=400",
+        "category": ""
+        },{
+        "id": 231,
+        "name": "Laptop Lenovo Legion 7, 16\", 3K, Intel Core i9-14900HX, 32GB RAM, 1TB SSD, RTX 4070 8GB, i bardhë",
+        "price": "2,319.50 €",
+        "description": "Lenovo Legion 7 16IRX9 është një stacion i fuqishëm i lojërave celulare me një ekran 16\" 3.2K IPS (3200x2000), frekuencë rifreskimi 165 Hz, 100% DCI-P3 dhe mbështetje Dolby Vision. Mundësuar nga një Intel® Core™ i9HX (1490 bërthama, deri në 5.8 GHz) dhe NVIDIA® GeForce RTX™ 4070 8 GB GDDR6, ai gjithashtu përmban 32 GB RAM DDR5, 1 TB PCIe® SSD dhe një lexues të gjurmëve të gishtërinjve Me një bateri të fuqishme 99,9 Wh që ofron karikim të shpejtë, përfshin opsione të avancuara lidhjeje si USB-C Thunderbolt 2.1 dhe HDMI. Laptopi gjithashtu mburret me çelësa RGB me ndriçim, a tastierë me përmasa të plota dhe një ueb-kamerë 1080p me shkrepëse Elektronike.",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/cb3e8748-fe2b-43c9-93aa-019a66467e00/cb3e8748-fe2b-43c9-93aa-019a66467e00.webp?w=400",
+        "category": ""
+        },{
+        "id": 232,
+        "name": "Laptop Lenovo ThinkPad E16, 16\", AMD Ryzen™ 5 7535HS, 16GB DDR5-SDRAM, 512GB SSD, Integrated AMD Radeon 660M, i zi",
+        "price": "939.50 €",
+        "description": "Laptop Lenovo ThinkPad E16, 16\, AMD Ryzen™ 5 7535HS, 16GB DDR5-SDRAM, 512GB SSD, Integrated AMD Radeon 660M, i zi",
+        "image": "https://iqq6kf0xmf.gjirafa.net/images/8f57ade7-faca-4a83-be19-4785f04bbdae/8f57ade7-faca-4a83-be19-4785f04bbdae.webp?w=400",
+        "category": ""
+        },
+        ]
+       const produktiContainer = document.getElementById("produktiContainer");
+
+       
+       function shfaqProdukte() {
+       produktiContainer.innerHTML = "";  
+       
+       produkte.forEach(produkti => {
+       const produktiDiv = document.createElement("div");
+       produktiDiv.className = "produkti";
+       produktiDiv.innerHTML = `
+           <img src="${produkti.image}" class="im" alt="${produkti.name}">
+             
+           <div class="d">
+           <h2>${produkti.name}</h2>
+           <p><strong></strong> ${produkti.price}</p>
+           
+           </div>
+       `;
+       
+       
+       produktiDiv.addEventListener("click", () => {
+            
+           const productUrl = `../product.html?id=${produkti.id}`;
+           
+           window.location.href = productUrl;
+       });
+       
+       produktiContainer.appendChild(produktiDiv);
+       });
+       }
+       
+       
+       shfaqProdukte();
+              </script>
+               <script src="../js/searchbar.js"></script>
+       <script src="js/produktet.js"></script>
+</body>
+</html>
